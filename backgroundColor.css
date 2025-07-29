@@ -1,0 +1,84 @@
+header{
+        Background-Color: lightseagreen;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    section{
+        background-color: white;
+        margin: 20px 0;
+        border: 1px solid #DDD;
+        padding: 20px;
+    }
+
+    h1 , h2{
+        background-color: rgb(91, 91, 233);
+        color:white;
+        padding:10px;
+        font-style: italic;
+
+    }
+
+    p{
+        background-color: lightpink;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    p::first-line{
+        background-color: lightblue;
+    }
+
+    span{
+        background-color: lightpink;
+        color: lightblue;
+        padding: 5px;
+    }
+
+    ul li:nth-child(odd){
+        background-color: #E0F7FA;
+        padding: 5px;
+    }
+
+    ul li:nth-child(even){
+        background-color: #B2EBF2;
+        padding: 5px;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th{
+        background-color:lightcoral;
+        color: #FFF;
+        padding: 10px;
+        border: 1px solid #DDD;
+    }
+    td{
+        background-color:lightpink;
+        color: black;
+        padding: 10px;
+        border: 1px solid #DDD;
+    }
+
+    input, textarea, button{
+        background-color: #FFF;
+        padding: 8px;
+        border: 1px solid #DDD;
+        margin-bottom: 10px;
+    }
+    button{
+        background-color: lightseagreen;
+        color:#FFF;
+        cursor: pointer;
+    }
+
+    a{
+        background-color: lightblue;
+        color: lightseagreen;
+        padding: 5px;
+        text-decoration: none;
+    }

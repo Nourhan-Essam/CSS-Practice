@@ -1,0 +1,42 @@
+body{
+    background-image: url("backround1.webp");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature{
+    background-image: url("The photo.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: left;
+    padding: 40px;
+    margin: 20px;
+    border: 2px solid #333;
+}
+
+.btn{
+    background-image: url("The photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
