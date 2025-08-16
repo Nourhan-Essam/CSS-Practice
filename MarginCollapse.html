@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse Example</title>
+    <link rel="stylesheet" href="MarginCollapse.css">
+</head>
+<body>
+    <h1>Margin Collapse: Adjacent Siblings</h1>
+    <p>This is the first paragraph with a 30px bottom margin.</p>
+  <p>This is the second paragraph with a 30px top margin.
+    <br>
+    Note: Instead of having 60px between the paragraphs (30px from each), the margins collapse to 30px.
+  </p>
+
+  <h3>Preventing Margin Collapse</h3>
+  <div class="no-collapse">
+    <p>This paragraph is inside a padded container. The container’s padding prevents the child margins from collapsing with the container’s margins.</p>
+    <p>This is another paragraph inside the same container with full margins intact.</p>
+  </div>
+
+  <h3>Parent-Child Margin Collapse</h3>
+  <div class="parent">
+    <p>The top margin of this paragraph may collapse with the parent's top margin, reducing the overall space.</p>
+    <p>Similarly, the bottom margin may collapse with the parent's bottom margin.</p>
+  </div>
+</body>
+</html>

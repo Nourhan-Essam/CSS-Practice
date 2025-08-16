@@ -1,0 +1,26 @@
+p{
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+    margin: 30px 20px;
+    padding: 10px;
+}
+.noCollapse{
+    background-color: #fff3e0;
+    padding: 20px;  /* Padding prevents margin collapse with child elements */
+    border: 1px solid #ff9800;
+}
+.noCollapse p{
+    background-color: #ffe0b2;
+    margin: 30px 20px;
+    padding: 10px;
+    border: 10px solid #fb8c00;
+}
+.parent{
+    background-color: #f0f4c3;
+    margin: 40px 20px;
+}
+.parent p{
+    background-color: #e6ee9c;
+    margin: 20px;
+    padding: 10px;
+}
