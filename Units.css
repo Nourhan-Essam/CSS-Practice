@@ -1,0 +1,272 @@
+.pixels-box
+{
+    width: 300px;
+    height: 150px;
+    background: lightgrey;
+    border: 2px solid #333;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+}
+
+/*pt Example*/
+.body-text
+{
+    font-size: 12pt;
+}
+.heading
+{
+    font-size: 18pt;
+    margin-bottom: 20px;
+}
+
+.container{width: 80%; margin: 0 auto; background: #c8e6c9;}
+.percent-box
+{
+    width: 50%;  /* 50% of the container's width */
+    padding: 2%;  /* 2% of the container's width */
+    background: #a5d6a7;
+    border: 2px solid #2e7d32;
+    margin: 20px auto;
+    text-align: center;
+}
+
+html{font-size: 16px;}
+.em-box
+{
+    font-size: 2em; /* 2 × parent's font-size */
+    padding: 1em;   /* relative to its font-size (2em × 1em) */
+    background: #bbdefb;
+    border: 2px dashed #1976d2;
+    margin: 20px;
+}
+
+/*Em Compounding Demonstration*/
+body
+{
+    font-size: 16px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+.parent
+{
+    font-size: 1.5em; /* 1.5 * 16px = 24em from body */
+    background: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.child
+{
+    font-size: 1.5em; /* 1.5 * 24px = 36em from parent*/
+    background:  #b2ebf2;
+    padding: 10px;
+    margin-top: 10px;
+}
+.grandChild
+{
+    font-size: 1.5em;  /* 1.5em * 36px = 54em from child */
+    background: #80deea;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*rem example*/
+.parent2
+{
+    font-size: 1.5rem; /* 1.5rem * 16px = 24px*/
+    background: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.child2
+{
+    font-size: 1.5rem; /* 1.5 * 16px = 24px*/
+    background: #b2ebf2;
+    padding: 10px;
+    margin-top: 10px;
+}
+.grandchild2
+{
+    font-size: 1.5rem; /* 1.5 * 16px = 24px*/
+    background: #80deea;;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*Reset Default Values*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+/* Full-screen main using vw & vh */
+.main
+{
+    width: 100%; /* 100% of viewport width */
+    height: 100%; /* 100% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);;
+    color: white;
+    text-align: center;
+    font-size: 5vw; /* Scales with viewport width */
+}
+/* A content section with responsive padding & typography */
+.section
+{
+    padding: 5vh 5vw; /* 5% of viewport height top/bottom, 5% of width left/right */
+    background: #f4f4f4;
+    min-height: 50vh;  /* At least half the viewport height */
+}
+.section h2
+{
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+.section p
+{
+    font-size: 2vw;
+}
+
+/* 1️⃣ Responsive Typography */
+h1
+{
+    font-size: 5vmax; /* 5% of the larger viewport dimension*/
+    text-align: center;
+    color: #1a237e;
+    margin: 1rem 0;
+}
+/* 2️⃣ Square Element */
+.box
+{
+    width: 20vmin; /* 20% of the smaller viewport dimension */
+    height: 20vmin; /* ensures it stays square */
+    background: #c5e1a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 2vmin;
+    color: #33691e;
+    border: 2px solid #558b2f;
+}
+/* 3️⃣ Full-Screen Artboard using min() */
+.artboard
+{
+    width: min(100vmax, 100vmin);  /* fits within whichever viewport side is smaller */
+    height: min(100vmax, 100vmin);
+    background: #ffccbc;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    border: 4px dashed #bf360c;
+    font-size: 4vmin;
+    text-align: center;
+    color: #bf360c;
+}
+ /* 4️⃣ Circular Avatar */
+ .avatar
+ {
+    width: 15vmin; /* scales to 15% of smaller viewport side */
+    height: 15vmin;
+    border-radius: 50%; /* perfect circle */
+    background: url('https://i.pravatar.cc/300') center/cover no-repeat;
+    margin: 1rem auto;
+    border: 3px solid #ff7043;
+ }
+
+ body
+ {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+ }
+ header
+ {
+    text-align: center;
+    margin-bottom: 2em;
+ }
+ section
+ {
+    margin-bottom: 2em;
+ }
+ .container-60ch
+ {
+    width: 60ch; /* Limit text measure to ~60 characters */
+    margin: 0 auto;
+    padding: 1em;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+ }
+ .input-30ch
+ {
+    width: 30ch; /* Input field 30 characters wide */
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #888;
+    margin-top: 0.5em;
+    display: block;
+ }
+ .code-40ch
+ {
+    width: 40ch;  /* Code block width 40 characters */
+    padding: 1em;
+    background: #272822;
+    color: #f8f8f2;
+    font-family: monospace;
+    overflow-x: auto;
+    border-radius: 4px;
+ }
+ .note 
+ {
+    font-size: 0.9em;
+    color: #555;
+ }
+
+ /* Example 1: Line-height using ex */
+    .line-ex {
+      font-size: 16px;        /* Base font size */
+      line-height: 2ex;       /* Twice the x-height of the font */
+      background: #f0f4c3;
+      padding: 1em;
+      border: 1px solid #c0ca33;
+    }
+
+    /* Example 2: Height and width using ex */
+    .box-ex {
+      font-family: 'Courier New', monospace;
+      font-size: 20px;        /* Larger font for clarity */
+      width: 20ex;            /* Width equal to 20 × the x-height */
+      height: 10ex;           /* Height equal to 10 × the x-height */
+      background: #ffecb3;
+      border: 2px dashed #fbc02d;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Example 3: Padding using ex */
+    .pad-ex {
+      font-size: 18px;
+      padding: 3ex;           /* Padding equal to 3 × the x-height */
+      background: #e1bee7;
+      border: 2px solid #8e24aa;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #555;
+    }
