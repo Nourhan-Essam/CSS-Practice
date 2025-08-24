@@ -1,0 +1,5 @@
+body{font-family: Georgia, serif; font-size: 1.2em;}
+.normal{font-style: normal;}
+.italic{font-style: italic;}
+.oblique{font-style: oblique;}
+.angle{font-style: oblique 15deg;}

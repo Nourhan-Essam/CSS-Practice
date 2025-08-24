@@ -1,0 +1,24 @@
+body{
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Make each paragraph half the container width */
+ .normal,
+ .unitless,
+ .double-line-height,
+ .px-based,
+ .em-based,
+ .percent{
+    width:50%;
+    margin-bottom: 1.5em;
+ }
+ .normal{line-height: normal;   }
+.unitless{line-height: 1.5;     } /* 1.5 x font-size*/
+.double-line-height{line-height: 2;} /* 2 x font-size*/
+.px-based{line-height: 24px;}       /* exact 24px*/
+.em-based{line-height: 1.5em;}      /* 1.5 x font-size*/
+.percent{line-height: 150%; }       /* 1.5 x font-size*/
+strong{color: #9932CC}
+P{color: #663399;}
+h1{color: #8A2BE2;}

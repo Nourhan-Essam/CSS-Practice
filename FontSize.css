@@ -1,0 +1,26 @@
+h1{font-size: 32px; color:aquamarine;}
+p{font-size: 16px; color:aquamarine;}
+
+body{font-size: 16px;}
+.parent{font-size: 1.5em; color:cadetblue}
+.child{font-size: 1em; color:cadetblue}
+
+html{font-size: 16px;}
+h3{font-size: 2rem; color:darkcyan}
+p{font-size: 0.75rem; color:darkcyan}
+
+body{font-size: 16px;}
+.small{font-size: 75%;}
+.large{font-size: 125;}
+
+h3{font-size: 5vw;}
+
+.xx-small-key{font-size: xx-small;}
+.x-small-key{font-size: x-small;}
+.small-key{font-size: small;}
+.meduim-key{font-size: medium;} /*default size*/
+.large-key{font-size: large;}
+.x-large-key{font-size: x-large;}
+.xx-large-key{font-size: xx-large;}
+.smaller-key{font-size: smaller;}
+.larger-key{font-size: larger;}
