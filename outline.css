@@ -1,0 +1,44 @@
+body{
+    margin: 2rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+section{margin-bottom: 2rem;}
+h2{margin-bottom: 0.5rem;}
+.box1{
+    width: 150px;
+    height: 100px;
+    background: #f0f0f0;
+    outline: 3px solid #007bff;
+}
+.box2{
+    width: 150px;
+    height: 100px;
+    background: #f0f0f0;
+    outline-width: 4px;
+    outline-style: dashed;
+    outline-color: #28a745;
+    outline-offset: 6px;
+}
+button{
+    padding: 0.5 em 1em;
+    font-size: 1rem;
+    background:  #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+button:focus{
+    outline: 3px dotted red;
+    outline-offset: 3px;
+}
+input{
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input:focus{
+     outline: 3px solid  Red;
+     outline-offset: 0px;
+}

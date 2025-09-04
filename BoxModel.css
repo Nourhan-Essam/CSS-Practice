@@ -1,0 +1,16 @@
+.content-box{
+    box-sizing: content-box;     /* default */
+    width: 200px;    /* content width */
+    padding: 20px;    /* adds 40px total */
+    border: 5px solid #333;
+    margin: 20px;
+    background: #c5cae9;
+}
+.border-box{
+    box-sizing: border-box;
+    width: 200px;    /* includes padding & border */
+    padding: 20px;   /* reduces content width */
+    border: 5px solid  #333;
+    margin: 20px;
+    background: #ffecb3;
+}
