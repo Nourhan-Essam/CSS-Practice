@@ -1,0 +1,12 @@
+body{ font-family: serif; line-height: 1.4;}
+nav{background: #333; color: #fff; padding: 0.5rem;}
+.no-print{color: red;}
+@media print{
+    body{
+        font-size: 12pt;
+        color: #000;
+    }
+    nav, .no-print{
+        display: none;
+    }
+}

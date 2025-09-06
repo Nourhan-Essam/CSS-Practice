@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    padding: 1rem;
+}
+.box{
+    width: 120px;
+    height: 80px;
+    margin: 0.5rem;
+    display: inline-block;
+    background: lightblue;
+    text-align: center;
+    line-height: 80px;
+}
+/* Hide completely: no gap */
+.hidden-display{
+    display: none;
+}
+/* Hide but keep gap */
+.hidden-vissibilty{
+    visibility: hidden;
+}
+ /* Controls */
+ button{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+ }
