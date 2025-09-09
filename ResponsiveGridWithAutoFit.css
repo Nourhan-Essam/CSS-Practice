@@ -1,0 +1,16 @@
+body{
+    font-family:'Franklin Gothic Medium';
+    padding: 1rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.grid-item{
+    background: #ace;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+h2{ color: #6A5ACD;}
