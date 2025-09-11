@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Example</title>
+    <link rel="stylesheet" href="overflow.css">
+</head>
+<body>
+     <h1>CSS <code>overflow</code> Property Examples</h1>
+     <h2>overflow: visible (default)</h2>
+     <div class="container visible">
+        This is some long content that will overflow outside the box. The overflow is <b>visible</b> so you can see it extending beyond the container!
+     </div>
+
+     <h2>overflow: hidden</h2>
+     <div class="container hidden">
+        This is some long content that will overflow outside the box. The overflow is <b>hidden</b> and you will only see what fits in the box.
+     </div>
+
+      <h2>overflow: scroll</h2>
+      <div class="container scroll">
+        This is some long content that will overflow outside the box. Overflow is <b>scroll</b>, so scrollbars are always visible, even if you don't need them.
+      </div>
+
+      <h2>overflow: auto</h2>
+      <div class="container auto">
+        This is some long content that will overflow outside the box. Overflow is <b>auto</b>: scrollbars appear only when needed.
+      </div>
+
+      <h2>overflow: clip</h2>
+      <div class="container clip">
+        This is some long content that will overflow outside the box. Overflow is <b>clip</b>: content is simply cut off, with no scrollbars and no visible overflow.
+      </div>
+</body>
+</html>
