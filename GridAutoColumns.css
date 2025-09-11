@@ -1,0 +1,15 @@
+.grid2{
+    display: grid;
+    grid-template-rows: 80px 80px;   /* Two explicit rows at 80px each */
+    grid-auto-flow: column;          /* Flow items into columns first, then new columns */
+    grid-auto-columns: 120px;        /* Flow items into columns first, then new columns */
+    gap: 10px;
+}
+.grid2 div{
+     background: #e94c3d;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: sans-serif;
+}

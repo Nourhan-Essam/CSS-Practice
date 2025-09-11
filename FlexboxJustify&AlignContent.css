@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    padding: 1rem;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;    /* allow multiple lines */
+    height: 200px;      /* fixed height to create extra space */
+    border: 2px solid #FF1493;
+    gap: 0.5rem;
+    justify-content: space-around;
+    align-content: center;
+}
+.flex-item{
+    flex: 0 0 100px; /* fixed-width items */
+    background: #FF00FF;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+h2{color: #CD5C5C;}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 80px);
+    width: 400px; /* create extra horizontal space */
+    height: 300px; /* create extra vertical space */
+    border: 2px solid  #FF1493;
+    gap: 10px;
+    justify-content: end;
+    align-content: space-between;
+}
+.cell{
+    background: #FF00FF;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+p{color:crimson;}

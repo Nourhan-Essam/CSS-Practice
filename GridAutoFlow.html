@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-flow Demo</title>
+    <link rel="stylesheet" href="GridAutoFlow.css">
+</head>
+<body>
+     <h2>1) `grid-auto-flow: row;` (default)</h2>
+     <div class="grid flow-row">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+     </div>
+
+     <h2>2) `grid-auto-flow: column;`</h2>
+     <div class="grid flow-column">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+     </div>
+
+     <h2>3) `grid-auto-flow: row dense;`</h2>
+     <div class="grid flow-row-dense">
+         <div>1</div><div>2</div><div class="item3">3⇢span2</div>
+        <div>4</div><div>5</div><div>6</div>
+     </div>
+
+     <h2>4) `grid-auto-flow: column dense;`</h2>
+      <div class="grid flow-column-dense">
+    <div>1</div><div>2</div><div class="item3">3⇢span2</div>
+    <div>4</div><div>5</div><div>6</div>
+  </div>
+
+</body>
+</html>

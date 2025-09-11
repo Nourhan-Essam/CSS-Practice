@@ -1,0 +1,38 @@
+body{font-family: sans-serif; padding: 1rem;}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    border: 2px solid #20B2AA;;
+    margin-bottom: 2rem;
+}
+.grid div{
+    background: rgb(96, 95, 125);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+/* Example 1: center horizontally, end vertically */
+.example1{
+    justify-items: center;   /* horizontal alignment in each cell */
+    align-items: end;         /* vertical alignment in each cell */
+}
+/* Example 2: start horizontally, start vertically */
+.example2{
+    justify-items: start;
+    align-items: start;
+}
+/* Example 3: end horizontally, center vertically */
+.example3{
+    justify-items: end;
+    align-items: center;
+}
+ /* Example 4: stretch (default) */
+ .example4{
+    justify-items: stretch;
+    align-items: stretch;
+ }
+
+ h2{color: #1E90FF;}
+ h1{color: #00BFFF;}

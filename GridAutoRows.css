@@ -1,0 +1,14 @@
+.grid1{
+    display: grid;
+    grid-template-columns: 100px 100px;      /* Two explicit columns at 100px each */
+    grid-auto-rows: 60px;                   /* Any new row beyond the first gets height 60px */
+    gap: 10px;
+}
+.grid1 div{
+    background: #4a90e2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
