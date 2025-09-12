@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica;
+    margin: 2rem;
+    line-height: 1.5;
+}
+/* 1) Floating an image */
+.float-left{
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 100px;
+    height: 75px;
+    background: #ddd url('https://via.placeholder.com/200x150') center/cover;
+}
+/* 1.1) Floating an image */
+.float-right{
+    float: right;
+    margin: 0 1rem 1rem 0;
+    width: 100px;
+    height: 75px;
+    background: #ddd url('https://via.placeholder.com/200x150') center/cover;
+}
+/* 2) Two-column layout with floats */
+.column{
+    float: left;
+    width: 25%;
+    margin: 0 2% 1rem 0;
+    padding: 1rem;
+    background: #f0f0f0;
+}
+.column:last-child{margin-right: 0;}
+
+/* 3) Clearing floats */
+.clear-both{
+    clear: both;
+}
+
+/* 4) Clearfix hack */
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+ /* Footer style */
+ footer{
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+ }

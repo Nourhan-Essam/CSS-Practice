@@ -1,0 +1,44 @@
+body{
+    font-family: Georgia, serif;
+    padding: 2rem;
+    line-height: 1.6;
+    color: #333;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+/* 1) Basic 3-column layout */
+.three-cols{
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+/* 2) Adding a column rule (divider) */
+.with-rule{
+    column-count: 3;
+    column-gap: 1rem;
+    column-rule: 2px solid #999;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+ /* 3) Responsive columns via column-width */
+ .auto-cols{
+    column-width: 200px; /* each column at least 200px */
+    column-gap: 1rem;
+    margin-top: 2rem;
+ }
+
+ /* 4) Prevent images from splitting */
+ .with-images{
+    column-count: 2;
+    column-gap: 1rem;
+    margin-top: 2rem;
+ }
+ .with-images img{
+    width: 100%;
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      display: block;
+ }

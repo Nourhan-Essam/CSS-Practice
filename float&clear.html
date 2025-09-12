@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear Demo</title>
+    <link rel="stylesheet" href="float&clear.css">
+</head>
+<body>
+    <h1>CSS `float` and `clear` Demo</h1>
+    <section>
+        <h2>Floating an Image - Left</h2>
+        <div class="float-left"></div>
+         <p>
+      This paragraph wraps around the floated image. Floats allow inline content
+      to flow beside an image or box. Notice how text comes up alongside the
+      box until it clears the bottom edge, then continues full-width.
+    </p>
+    <div class="clear-both"></div>
+    </section>
+
+    <section>
+        <div class="float-right"></div>
+        <p>
+      This paragraph wraps around the floated image. Floats allow inline content
+      to flow beside an image or box. Notice how text comes up alongside the
+      box until it clears the bottom edge, then continues full-width.
+    </p>
+    <div class="clear-both"></div>
+    </section>
+
+    <!-- Two-column layout example -->
+     <section class="clearfix">
+        <h2>Two-Column Layout with Floats</h2>
+        <div class="column">
+             <h3>Column One</h3>
+              <p>
+        Using `float: left` and a percentage width, you can create multi-column
+        layouts. Each column floats beside the other until the container’s width
+        is filled.
+      </p>
+        </div>
+
+        <div class="column">
+            <h3>Column Two</h3>
+            <p>
+        Without a clearfix, the parent `<section>` would collapse to zero height.
+        Adding the `.clearfix` class ensures the container expands to wrap both
+        floated columns.
+      </p>
+        </div>
+     </section>
+     <footer>Footer stays below floated content thanks to clearing.</footer>
+</body>
+</html>
