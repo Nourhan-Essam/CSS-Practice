@@ -1,0 +1,95 @@
+/* Base page styling */
+body{
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+}
+/*  Tooltip wrapper: establishes positioning context */
+.tooltip{
+    position: relative;     /* Anchor point for absolutely-positioned text */
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+/* 💬 Tooltip bubble (initially hidden) */
+.tooltip .tooltip-text{
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;    /* Prevent line breaks */
+    font-size: 0.9rem;
+
+    /* Hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+    pointer-events: none;        /* Ignore mouse events while hidden */
+}
+
+ /* Hover state: reveal bubble */
+ .tooltip:hover .tooltip-text{
+    opacity: 1;
+    visibility: visible;
+ }
+
+ /*  Arrow caret (drawn with borders) */
+ .tooltip .tooltip-text::after{
+    content: "";
+    position: absolute;
+    border-width: 6px;  /* Size of the triangle */
+    border-style: solid;
+ }
+
+ /* ─────── Placement: TOP ─────── */
+ .tooltip.top .tooltip-text{
+    bottom: 125%;   /* Place above wrapper */
+    left: 50%;
+    transform: translateX(-50%); /*translateX() shifts the element along the X-axis.*/
+ }
+.tooltip.top .tooltip-text::after{
+    top: 100%; /* Arrow sits under bubble */
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: #333 transparent transparent transparent;
+}
+
+/* ─────── Placement: BOTTOM ─────── */
+.tooltip.bottom .tooltip-text{
+    top: 125%;  /* Place below wrapper */
+    left: 50%;
+     transform: translateX(-50%);
+}
+.tooltip.bottom .tooltip-text::after{
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: transparent transparent #333 transparent;
+}
+
+ /* ─────── Placement: LEFT ─────── */
+ .tooltip.left .tooltip-text{
+    right: 125%;         /* Place left of wrapper */
+    top: 50%;
+    transform: translateY(-50%); /*translateY() shifts the element along the Y-axis.*/
+ }
+ .tooltip.left .tooltip-text::after{
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-color: transparent transparent transparent #333;
+ }
+
+  /* ─────── Placement: RIGHT ─────── */
+  .tooltip.right .tooltip-text{
+    left: 125%; /* Place right of wrapper */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .tooltip.right .tooltip-text::after{
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+      border-color: transparent #333 transparent transparent;
+  }
