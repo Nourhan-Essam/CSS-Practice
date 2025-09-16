@@ -1,0 +1,65 @@
+/* 🌐 Global Reset & Base Styling */
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+body{
+    font-family: Arial, Helvetica;
+     background: #f0f0f0;
+     padding: 2rem;
+     color: #333;
+     display: grid;
+     row-gap: 2rem; /* ↕ space between demo sections */
+}
+
+/* 📝 Text Shadow Example */
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);   /* Subtle glow: 2 px right & down, 4 px blur */
+}
+
+/* 🖼️ Card Demo Container */
+.card-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* 📦 Card Base Look */
+.card{
+    background: #fff;
+    width: 180px;
+    height: 120px;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 1️⃣ Soft Box Shadow */
+.card.soft{box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);}
+.card.soft:hover{box-shadow: 6px 6px 20px rgba(0,0,0,0.3); transform: translateY(-5px);}
+
+/* 2️⃣ Spread Box Shadow */
+.card.spread{box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.15);}
+.card.spread:hover{box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);  transform: translateY(-5px);}
+
+/* 3️⃣ Inset Box Shadow */
+.card.inset{box-shadow: inset 0 0 10px rgba(0,0,0,0.3);}    /* Shadow rendered inside the box → “pressed” look */
+.card.inset:hover{ box-shadow: inset 0 0 20px rgba(0,0,0,0.4);}
+
+/* 4️⃣ Drop-Shadow Filter (Image) */
+.image-demo{text-align: center;}
+.image-demo img{
+    width: 400px;
+    border-radius: 8px;
+    filter: drop-shadow(5px 5px 8px rgba(0,0,0,0.3));    /* Elevate image with drop-shadow (similar syntax to box-shadow) */
+    transition: filter 0.3s;
+}
+.image-demo img:hover{ filter: drop-shadow(8px 8px 12px rgba(0,0,0,0.4));}
