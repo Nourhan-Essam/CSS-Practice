@@ -1,0 +1,62 @@
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body{
+    background-image: url("https://images.pexels.com/photos/60880/pexels-photo-60880.jpeg?cs=srgb&dl=pexels-brian-60880.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;      /* Scale the image to cover the entire viewport */
+    background-position: center;
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    color: white;
+ }
+ h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+ }
+ .grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+ }
+ .box{
+    width: 200px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+ }
+
+ /* 1) Global opacity */
+ .opacity-box{
+    background: #3498db;
+    color: #fff;
+    opacity: 0.5;   /* 50% transparent */
+ }
+
+ /* 2) RGBA background */
+ .rgba-box{
+    background: rgba(231, 76, 60, 0.6); /* red at 60% opacity */
+ }
+
+ /* 3) HSLA background */
+ .hsla.box{
+    background: hsla(145, 75%, 45%, 0.4);   /* green hue, 40% opacity */
+ }
+
+ /* 4) Hover fade effect */
+ .hover-box{
+    background: black;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+ }
+
+ .hover-box:hover{
+   opacity: 0.5;
+ }
