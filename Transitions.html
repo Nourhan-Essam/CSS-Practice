@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions – Combined Demo</title>
+    <link rel="stylesheet" href="Transitions.css">
+</head>
+<body>
+    <h1>CSS Transitions – Combined Demo</h1>
+    <section>
+        <h2>1) Width Expansion</h2>
+    <div class="demo-container">
+        <div>
+            <div class="demo-box width-demo">Hover</div>
+            <div class="label">width → 200 px<br>duration 2 s</div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <h2>2) Delayed Background Change</h2>
+        <div class="demo-container">
+            <div>
+                <div class="demo-box delay-demo">Hover</div>
+                <div class="label">bg-color<br>1 s dur · 0.5 s delay</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3) Easing Curves</h2>
+        <div class="demo-container">
+            <div>
+                <div class="demo-box timing-demo ease">Ease</div>
+                <div class="label">ease</div>
+            </div>
+            <div class="demo-box timing-demo linear">Linear</div>
+            <div class="label">linear</div>            
+        </div>
+
+        <div>
+            <div class="demo-box timing-demo in-out">In-Out</div>
+            <div class="label">in-out</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4) Multiple-Property Shorthand</h2>
+        <div class="demo-container">
+            <div>
+                <div class="demo-box shorthand-demo">Hover</div>
+                <div class="label">bg + transform<br>custom cubic</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
