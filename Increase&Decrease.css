@@ -1,0 +1,33 @@
+/* 1️⃣ Declare variables in :root for font and spacing */
+:root{
+    --main-font-size: 18px;
+    --heading-font-size: 28px;
+    --section-padding: 20px;
+}
+body{
+    font-family: fantasy;
+    font-size: var(--main-font-size);
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+}
+h1{
+    font-size: var(--heading-font-size);
+    text-align: center;
+    margin: var(--section-padding) 0;
+}
+section{
+    background: white;
+    margin: var(--section-padding);
+    padding: var(--section-padding);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button{
+    display: block;
+    margin: var(--section-padding);
+    padding: 8px 16px;
+    font-size: var(--main-font-size);
+    cursor: pointer;
+}
