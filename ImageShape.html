@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Shape Demo</title>
+    <link rel="stylesheet" href="ImageShape.css">
+</head>
+<body>
+    <h1>CSS Image Shapes Demo</h1>
+    <section>
+         <h2>A.1) Circle via <code>border-radius</code></h2>
+         <p class="label">Mask a square image into a perfect circle using <code>border-radius: 50%</code>.</p>
+         <div class="demo">
+            <img class="circle-img" src="data:image/webp;base64,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" >
+         </div>
+    </section>
+
+    <section>
+         <h2>A.2) Circle via <code>clip-path</code></h2>
+         <p class="label">Mask a square image into a perfect circle using <code>clip-path</p>
+            <div class="demo">
+                <img class="circleClipPath1-img" src="https://tse2.mm.bing.net/th/id/OIP.cwzV4SVZ0uC-N_5CNWXiGwHaE8?w=6240&h=4160&rs=1&pid=ImgDetMain&o=7&rm=3">
+            </div>
+    </section>
+
+    <section>
+         <h2>A.3) Half Right Circle via <code>clip-path</code></h2>
+         <p class="label">Mask a square image into a right half circle using <code>clip-path</p>
+            <div class="demo">
+                <img class="circleClipPathRight-img" src="https://th.bing.com/th/id/OIP.RMJtfJGF1VyM6TifnRYqeAHaEO?w=302&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+            </div>
+    </section>
+
+    <section>
+        <h2>A.4) Half Left Circle via <code>clip-path</code></h2>
+        <p class="label">Mask a square image into a left half circle using <code>clip-path</code>.</p>
+        <div class="demo">
+            <img class="circleClipPathLeft-img" src="https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>B.1) Ellipse via <code>border-radius</code></h2>
+        <p class="label">Create an ellipse by specifying horizontal and vertical radii.</p>
+        <div class="demo">
+            <img class="ellipse1-img" src="https://i.pinimg.com/originals/dc/55/a7/dc55a7baa9cbd457221ae6d12d9b1b51.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>B.2) Ellipse via <code>border-radius</code></h2>
+        <p class="label">Create an ellipse by specifying horizontal and vertical radii.</p>
+        <div class="demo">
+            <img class="ellipse2-img" src="https://img.freepik.com/premium-photo/beautiful-nature-scenery-wallpaper-view_1123191-3307.jpg?w=2000">
+        </div>
+    </section>
+
+    <section>
+        <h2>B.3) Ellipse via <code>clip-path:ellipse</code></h2>
+        <p class="label">Create an ellipse via clip-path.</p>
+        <div class="demo">
+            <img class="ellipse3-img" src="https://tse2.mm.bing.net/th/id/OIP.tyaVQQ6Insc-Hy91rtfqWAHaE7?w=2000&h=1333&rs=1&pid=ImgDetMain&o=7&rm=3">
+        </div>
+    </section>
+
+    <section>
+        <h2>B.5) Left Ellipse via <code>clip-path:ellipse</code></h2>
+        <p class="label">Create an ellipse via clip-path.</p>
+        <div class="demo">
+            <img class="ellipseLeft-img" src="https://img.freepik.com/premium-photo/beautiful-valley_890746-24441.jpg">
+        </div>
+    </section>
+
+    <section>
+         <h2>C.1) Polygon via <code>clip-path</code></h2>
+         <p class="label">Clip an image into a hexagon shape using a four-point <code>polygon()</code>.</p>
+         <div class="demo">
+            <img class="polygon" src="https://tse3.mm.bing.net/th/id/OIP.kfAqNtpiXFByhm_50-BbzQHaE8?w=4000&h=2667&rs=1&pid=ImgDetMain&o=7&rm=3">
+         </div>
+    </section>
+
+    <section>
+        C.2) Hexagon via <code>clip-path</code>
+        <p class="label">Clip an image into a hexagon shape using a six-point <code>polygon()</code>.</p>
+        <div class="demo">
+            <img class="hexagon" src="https://img.freepik.com/premium-photo/foggy-morning-lake-with-trees-background_996379-1569.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>D) Inset Rounded Rect & Circle Mask via <code>clip-path</code></h2>
+        <p class="label">Use <code>inset()</code> with <code>round</code> for a rounded rectangle, and <code>circle()</code> for a precise circle mask.</p>
+        <div class="demo">
+            <img class="rounded-rect" src="https://tse1.mm.bing.net/th/id/OIP.Lk4f70a6VSmbyPzStIMxxwHaEL?w=4000&h=2254&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <img class="circle-mask" src="https://tse3.mm.bing.net/th/id/OIP.frTLlvf3kbgBevMtu-6dqQHaFj?w=1600&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3">
+        </div>
+    </section>
+
+    <section class="clearfix">
+        <h2>E) Text Wrapping with <code>shape-outside</code></h2>
+        <p class="label">Float a ellipse-clipped image and wrap text around its shape using <code>shape-outside</code>.</p>
+        <div class="shape-container">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.k0mLh1jJdkqIkAq-abMdtAHaE5?w=900&h=596&rs=1&pid=ImgDetMain&o=7&rm=3">
+        </div>
+        <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec est a nisi mollis accumsan. Sed venenatis, 
+      arcu at ullamcorper fringilla, urna dui luctus massa, non ultricies neque purus sit amet est. Morbi tincidunt 
+      urna sed libero semper volutpat. Integer ac suscipit quam. Vivamus vehicula sapien non dolor condimentum, 
+      non tincidunt nisi elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec est a nisi mollis accumsan. Sed venenatis, 
+      arcu at ullamcorper fringilla, urna dui luctus massa, non ultricies neque purus sit amet est. Morbi tincidunt 
+      urna sed libero semper volutpat. Integer ac suscipit quam. Vivamus vehicula sapien non dolor condimentum, 
+      non tincidunt nisi elementum.
+        </p>
+    </section>
+
+    <section>
+        <h2>F) Triangle via <code>clip-path</code></h2>
+        <p class="label">Clip an image into a triangle shape using a three-point <code>polygon()</code>.</p>
+        <div class="demo">
+            <img class="triangle" src="https://t3.ftcdn.net/jpg/01/91/10/60/360_F_191106083_0U7wQYDqSRGrdrYBvBarPQVTx6Hst0wj.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>G) Star via <code>clip-path</code></h2>
+        <p class="label">Create a star shape using a ten-point <code>polygon()</p>
+            <div class="demo">
+                <img class="star" src="https://tse3.mm.bing.net/th/id/OIP.NY5it7d03j6hxSMVMfaxqgHaEo?w=1600&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3">
+            </div>
+    </section>
+</body>
+</html>
