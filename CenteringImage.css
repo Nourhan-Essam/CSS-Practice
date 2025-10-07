@@ -1,0 +1,50 @@
+body{
+    font-family: fantasy;
+    background: #fafafa;
+    color: #333;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+section h2{
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+section p{
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+ /* Method 1: margin:auto centering */
+ .method1 img{
+    display: block;  /* make it a block-level element */
+    margin-left: auto; /* auto left margin */
+    margin-right: auto; /* auto right margin */
+    width: 50%;  /* width less than container */
+    border: 2px solid #ddd;
+    border-radius: 4px;
+ }
+
+ /* Method 2: flexbox centering */
+ .method2{
+    display: flex;  /* enable flex layout */
+    justify-content: center;     /* center children horizontally */
+ }
+ .method2 img{
+    width: 50%; /* width less than container */
+    border: 2px solid #ddd;
+    border-radius: 4px;
+ }

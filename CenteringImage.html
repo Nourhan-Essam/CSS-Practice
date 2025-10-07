@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Centering Examples</title>
+    <link rel="stylesheet" href="CenteringImage.css"> 
+</head>
+<body>
+    <h1>Image Centering Examples</h1>
+
+    <h2>Method 1: Center with <code>margin: auto</code></h2>
+    <p>
+      Convert the `< img >` to block and give it left/right auto margins.
+      The image will center itself within its container.
+    </p>
+
+    <p>Used when: <br> <ul>
+        <li>Quick, minimal markup</li>
+        <li>Works in all browsers (IE9+)</li>
+        <li>No extra containers required</li>
+    </ul>
+    <section class="method1">
+        <img src="https://w.wallhaven.cc/full/4o/wallhaven-4o5yll.jpg" alt="Image via margin:auto">
+    </section>
+    </p>
+
+    <h2>Method 2: Center with Flexbox</h2> 
+    <p>
+        Wrap the image in a flex container and use
+      <code>justify-content: center</code> to center it.
+    </p>
+     <p> Used When: <br> <ul>
+        <li>More versatile if you need vertical centering too</li>
+        <li>Can center multiple items in a row</li>
+        <li>Cleaner when you already use flex for other layout</li>
+    </ul>   
+    <section class="method2">
+    </p>
+    <div class="method2">
+      <img src="https://t3.ftcdn.net/jpg/02/44/87/22/360_F_244872239_azkABr55gA7NhICMGaZWyvuprXQjUFYv.jpg" alt="Image via flexbox">
+    </div>
+    </section>
+</body>
+</html>
