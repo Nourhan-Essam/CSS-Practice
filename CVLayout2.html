@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Sidebar</title>
+    <link rel="stylesheet" href="CVLayout2.css">
+</head>
+<body>
+    <main class="wrap">
+        <div class="grid">
+            <aside class="sidebar" aria-label="SideBar">
+                <div class="sidehead">
+                <div class="avatar" role="img" aria-label="Portifilio Photo">
+                    <img src="c:\Users\A\Pictures\Screenshots\Nana.jpg" alt="Portifilio Photo" loading="lazy">
+                </div>
+                <div>
+                <h2 class="name">Norhan Essam</h2>
+                <p class="role">Front-End Developer . UI Engineer</p>
+            </div>
+        </div>
+
+        <!-- Toggle Theme -->
+         <div class="toggle-row">
+            <input type="checkbox" id="themeSwitch">
+            <label class="switch" for="themeSwitch" aria-Label="Toggle dark or light theme">
+               
+            </label>
+            <span class="toggle-label">Dark Mode</span>
+         </div>
+         <div class="hint">
+            "Tip: this switch uses the CSS "<code>:has()</code> "selector to override variables."
+         </div>
+         <div class="side-body">
+            <div class="side-card">
+            <strong>Contact</strong>
+            <div class="links" aria-label="Contact Information">
+                
+                <a href="mailto:you@example.com" aria-label="Email">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"></path>
+                    </svg>
+                    nourhanessam897@gmail.com
+                </a>
+
+                <span>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"></path>
+                    </svg>
+                    +20010xxxxxxxx
+                </span>
+                
+                <span>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"></path>
+                    </svg>
+                    El-Garbeia, Egypt.
+                </span>
+
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+                    </svg>
+                    www.linkedin.com/in/norhan-essam-552aa0252
+                </a>
+
+                <a href="https://github.com/Nourhan-Essam" target="_blank" rel="noopener" aria-Label="GitHub">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                    </svg>
+                    https://github.com/Nourhan-Essam
+                </a>
+            </div>   
+            </div>
+
+            <div class="side-card">
+                <!--Languages-->  
+                <strong>Languages</strong>
+                <br>
+                <br>
+                <span class="badge">Arabic (Native).</span>
+                <span class="badge">English (Fluent).</span>
+            </div>
+            
+            <div class="side-card">
+                <strong>Top Skills</strong>
+                <div style="margin-top: 8px;">
+                    <span class="badge">Semantic HTML</span>
+                    <span class="badge">Modern CSS</span>
+                    <span class="badge">Git & GitHub</span>
+                    <span class="badge">C#</span>
+                    <span class="badge">Problem Solving</span>
+                </div>
+            </div>
+         </div>
+        </aside>
+
+        <!--=================Main Content==============================-->
+        <section class="main" aria-label="Main Content">
+            <header class="hero" aria-labelledby="hero-title">
+                <h1 id="hero-title">Resume</h1>
+                <p>Impact-driven Front-End Developer specilization in accessible, fast UIs.</p>
+            </header>
+
+            <!--Quick highliht cards (auto wrap across breakpoints)-->
+            <div class="cards" aria-label="Highlights">
+                <article class="cardy">
+                    <h3>Highlights</h3>
+                    <ul class="clean">
+                        <li>Shipped 20+ responsive sites.</li>
+                        <li>Pref budgets & LightHouse 95+.</li>
+                        <li>Mentored 5 Juniors.</li>
+                    </ul>
+                </article>
+
+                <article class="cardy">
+                    <h3>Tooling</h3>
+                    <p>Vite, ESLint, Prettier, Playwright basics, Storybook.</p>
+                </article>
+
+                <article class="cardy">
+                    <h3>Focus</h3>
+                    <p>Design systems, design tokens, CSS architecture, a11y.</p>
+                </article>
+            </div>
+
+            <section class="timeline" aria-labelledby="exp-title">
+                <h2 id="exp-title" style="margin: 0 0 12px">Experience</h2>
+                <div class="tl-item">
+                    <div>
+                        <div class="tl-role">Junior Front-End Developer.</div>
+                        <div class="tl-where">Egypt</div>
+                        <ul class="tl-list">
+                            <li>Built Component library. reduced 30% using tokens.</li>
+                            <li>Led accessibility drive to AA; created lint rules &amp; docs.</li>
+                        </ul>
+                    </div>
+                    <div class="tl-when">2022 - 2026</div>
+                </div>
+                <div class="tl-item">
+                    <div>
+                        <div class="tl-role">Web Designer.</div>
+                        <div class="tl-where">Remote.</div>
+                        <ul class="tl-list">
+                            <li>Prototyped 12 marketing sites; built a mini design system.</li>
+                            <li>Handed off clean, semantic HTML/CSS to dev teams.</li>
+                        </ul>
+                    </div>
+                    <div class="tl-when">2022 - 2026.</div>
+                </div>
+            </section>
+            <section class="timeline" aria-labelledby="proj-title">
+                <h2 id="proj-title" style="margin: 0 0 12px">Selected Projects</h2>
+                <div class="tl-item">
+                    <div>
+                        <div class="tl-role">Portifilio Website.</div>
+                        <div class="tl-where">Personal.</div>
+                        <ul class="tl-list">
+                            <li>Static site scoring 95+ on Lighthouse Performance.</li>
+                            <li>CI/CD previews on each PR; automated checks.</li>
+                        </ul>
+                    </div>
+                    <div class="tl-when">2025.</div>
+                </div>
+                <div class="tl-item">
+                    <div>
+                        <div class="tl-role">Design System Demo.</div>
+                        <div class="tl-where">Open Source.</div>
+                        <ul class="tl-list">
+                            <li>Token-based theming via CSS custom properties.</li>
+                            <li>Documented components; onboarded team in a week.</li>
+                        </ul>
+                    </div>
+                    <div class="tl-when">2025</div>
+                </div>
+            </section>
+
+            <div class="cards" aria-label="Education & Certification">
+                <article class="cardy">
+                    <h3>Education</h3>
+                    <p>
+                        <strong>BIS. Buisness Information System</strong>
+                    <br>
+                    Tanta University . 2022 - 2026
+                    </p>
+                    <ul class="clean">
+                        <li>Graduated with Honors</li>
+                        <li>Key courses: HCI, Data Structures</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
