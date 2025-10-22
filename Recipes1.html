@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney Recipes</title>
+    <link rel="stylesheet" href="Recipes1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Disney Recipes </h1>
+      <br />
+      <nav>
+        <a
+          href="#"
+          onclick="document.getElementById('recipe1').showModal(); return false;"
+          >Ratatouille</a>
+        <a href="#" onclick="document.getElementById('recipe2').showModal(); return false;">Tiana’s Beignets from The Princess and the Frog</a>
+        <a href="#" onclick="document.getElementById('recipe3').showModal(); return false;">The Paper Lantern Shop</a>
+      </nav>
+    </header>
+
+    <article class="story-card">
+      <img
+        src="https://nummyrecipes.com/wp-content/uploads/2025/04/Ratatouille-from-Ratatouille.jpg"
+        class="story-img"
+      />
+      <h2 class="story-title">Ratatouille from Ratatouille</h2>
+      <p class="story-title">
+        Unbelievably tender vegetables meld together in a harmonious blend, with
+        the basil adding a fresh, aromatic finish. Consider serving this
+        Ratatouille alongside grilled fish or as a standalone dish with a
+        sprinkle of Parmesan for a delightful contrast.
+      </p>
+      <a
+        href="#"
+        class="read-more"
+        onclick="document.getElementById('recipe1').showModal(); return false;"
+        >Read More</a
+      >
+    </article>
+
+    <article class="story-card">
+      <img
+        src="https://nummyrecipes.com/wp-content/uploads/2025/04/Tianas-Beignets-from-The-Princess-and-the-Frog.jpg"
+        class="story-img"
+      />
+      <h2 class="story-title">
+        Tiana’s Beignets from The Princess and the Frog
+      </h2>
+      <p class="story-title">
+        Delightfully light and irresistibly fluffy, Tiana’s Beignets from The
+        Princess and the Frog are a dreamy indulgence that transports you
+        straight to the heart of New Orleans with every bite.
+      </p>
+      <a href="#" class="read-more" onclick="document.getElementById('recipe2').showModal(); return false;">Read More</a>
+    </article>
+
+    <article class="story-card">
+      <img
+        src="https://nummyrecipes.com/wp-content/uploads/2025/04/Meridas-Oatcakes-from-Brave.jpg"
+        class="story-img"
+      />
+      <h2 class="story-title">Merida’s Oatcakes from Brave</h2>
+      <p class="story-title">
+        Brimming with the rustic charm of the Scottish Highlands, these oatcakes
+        are a hearty, wholesome treat that transports you straight into the
+        world of Brave.
+      </p>
+      <a href="#" class="read-more" onclick="document.getElementById('recipe3').showModal(); return false;">Read More</a>
+    </article>
+
+    <dialog id="recipe1" aria-labelledby="recipe1-title">
+      <button class="close-btn" onclick="this.parentElement.close()">X</button>
+     <img
+        src="https://nummyrecipes.com/wp-content/uploads/2025/04/Ratatouille-from-Ratatouille.jpg"/>
+      <h2 id="recipe1-title">Ratatouille</h2>
+      <p>
+        <b>Ingredients</b>
+        <ul>
+            <li>2 medium eggplants, diced into 1-inch cubes</li>
+            <li>2 zucchinis, sliced into half-moons</li>
+            <li>1 red bell pepper, chopped</li>
+            <li>1 yellow bell pepper, chopped</li>
+            <li>1 large onion, thinly sliced</li>
+            <li>4 ripe tomatoes, peeled and diced</li>
+            <li>a couple of garlic cloves, minced</li>
+            <li>a splash of olive oil</li>
+            <li>a pinch of salt and freshly ground black pepper</li>
+            <li>a handful of fresh basil leaves, torn</li>
+        </ul>
+      </p>
+      <p>
+        <b>Instructions</b>
+        <ol>
+            <li>Preheat your oven to 375°F (190°C) to get it ready for baking.</li>
+            <li>Heat a splash of olive oil in a large skillet over medium heat, then sauté the onions and garlic until they’re soft and fragrant, about 5 minutes.</li>
+            <li>Add the diced eggplants, zucchinis, and bell peppers to the skillet, stirring occasionally, until they start to soften, roughly 10 minutes.</li>
+            <li>Mix in the diced tomatoes, a pinch of salt, and black pepper, then let everything simmer together for another 5 minutes to blend the flavors.</li>
+            <li>Transfer the vegetable mixture to a baking dish, cover with foil, and bake in the preheated oven for 30 minutes.</li>
+            <li>Remove the foil, sprinkle the torn basil leaves over the top, and bake for an additional 10 minutes to let the flavors meld and the top slightly brown.</li>
+            <li>Tip: Let the Ratatouille sit for 5 minutes after baking to allow the juices to redistribute. Tip: For an extra layer of flavor, drizzle with a bit more olive oil before serving. Tip: Serve with a crusty baguette to soak up the delicious juices.</li>
+        </ol>
+      </p>
+    </dialog>
+
+    <dialog id="recipe2" aria-labelledby="recipe2-title">
+      <button class="close-btn" onclick="this.parentElement.close()">X</button>
+      <img
+        src="https://nummyrecipes.com/wp-content/uploads/2025/04/Tianas-Beignets-from-The-Princess-and-the-Frog.jpg"/>
+        <h2 id="recipe2-title">Tiana’s Beignets from The Princess and the Frog</h2>
+        <p>
+            <b>Ingredients</b>
+            <ul>
+                <li>2 cups of all-purpose flour</li>
+                <li>a couple of tablespoons of granulated sugar</li>
+                <li>a pinch of salt</li>
+                <li>1 packet of active dry yeast</li>
+                <li>3/4 cup of warm milk (about 110°F)</li>
+                <li>a splash of vanilla extract</li>
+                <li>1 egg</li>
+                <li>2 tablespoons of melted butter</li>
+                <li>vegetable oil for frying</li>
+                <li>a generous dusting of powdered sugar</li>
+            </ul>
+        </p>
+        <p>
+            <b>Instructions</b>
+            <ol>
+                <li>In a large bowl, whisk together the flour, sugar, salt, and yeast.</li>
+                <li>Add the warm milk, vanilla extract, egg, and melted butter to the dry ingredients. Mix until a soft dough forms.</li>
+                <li>Knead the dough on a lightly floured surface for about 5 minutes, until smooth and elastic. Tip: If the dough sticks to your hands, add a little more flour, but don’t overdo it to keep the beignets light.</li>
+                <li>Place the dough in a greased bowl, cover with a damp cloth, and let it rise in a warm place for 1 hour, or until doubled in size.</li>
+                <li>Roll out the dough on a floured surface to about 1/4-inch thickness. Cut into 2-inch squares.</li>
+                <li>Heat vegetable oil in a deep fryer or large pot to 370°F. Tip: Use a candy thermometer to ensure the oil is at the perfect temperature for golden beignets.</li>
+                <li>Fry the beignets in batches, turning once, until puffed and golden brown, about 2 minutes per side. Tip: Don’t overcrowd the pot to maintain the oil temperature.</li>
+                <li>Drain on paper towels and dust liberally with powdered sugar while still warm.</li>
+            </ol>
+        </p>
+      </dialog>
+
+      <dialog id="recipe3" aria-labelledby="recipe3-title">
+        <button class="close-btn" onclick="this.parentElement.close()">X</button>
+        <img src="https://nummyrecipes.com/wp-content/uploads/2025/04/Meridas-Oatcakes-from-Brave.jpg"/>
+        <h2 id="recipe3-title">Merida’s Oatcakes from Brave</h2>
+        <p>
+            <b>Ingredients</b>
+            <ul>
+                <li>2 cups of rolled oats</li>
+                <li>A splash of warm water</li>
+                <li>A couple of tablespoons of honey</li>
+                <li>A pinch of salt</li>
+                <li>A drizzle of olive oil</li>
+            </ul>
+        </p>
+        <p>
+            <b>Instructions</b>
+            <ol>
+                <li>Preheat your oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+                <li>In a large bowl, mix the rolled oats and a pinch of salt until well combined.</li>
+                <li>Add a splash of warm water and a couple of tablespoons of honey to the oat mixture, stirring until the ingredients start to come together into a dough. Tip: The dough should be sticky but manageable; if it’s too dry, add a bit more water.</li>
+                <li>Lightly flour your hands and shape the dough into small, flat rounds about 1/4 inch thick. Tip: For uniform oatcakes, use a cookie cutter or the rim of a glass to shape them.</li>
+                <li>Place the oatcakes on the prepared baking sheet and drizzle lightly with olive oil.</li>
+                <li>Bake for 15-20 minutes, or until the edges are golden brown and crisp. Tip: Keep an eye on them after 15 minutes to prevent over-browning.</li>
+            </ol>
+        </p>
+      </dialog>
+  </body>
+</html>
