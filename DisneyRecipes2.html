@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney Recipes 2</title>
+    <link rel="stylesheet" href="DisneyRecipes2.css" />
+  </head>
+  <body>
+    <body>
+      <header>
+        <h1>Disney Recipes</h1>
+        <p>Stylish 2-column recipes layout</p>
+      </header>
+
+      <main>
+        <!-- recipe 1 -->
+        <article class="recipe-card">
+          <img
+            src="https://nummyrecipes.com/wp-content/uploads/2025/04/Kronks-Spinach-Puffs-from-The-Emperors-New-Groove.jpg"
+            alt="from The Emperor’s New Groove"
+            class="recipe-thumb"
+          />
+          <div class="recipe-content">
+            <h2 class="recipe-title">
+              Kronk’s Spinach Puffs from The Emperor’s New Groove
+            </h2>
+            <p class="recipe-excerpt">
+              Lusciously golden and irresistibly flaky, Kronk’s Spinach Puffs
+              are a delightful nod to the beloved Disney classic, offering a
+              savory bite that’s as whimsical as its cinematic inspiration.
+              Perfect for gatherings or a cozy night in, these puffs marry the
+              richness of cheese with the earthy depth of spinach, all encased
+              in a buttery pastry shell.
+            </p>
+            <a
+              href="#"
+              class="read-more"
+              onclick="document.getElementById('recipe1').showModal(); return false;"
+              >Read More</a
+            >
+          </div>
+        </article>
+
+        <!-- recipe 2 -->
+        <article class="recipe-card">
+          <img
+            src="https://nummyrecipes.com/wp-content/uploads/2025/04/Grey-Stuff-from-Beauty-and-the-Beast.jpg"
+            alt="from Beauty and the Beast"
+            class="recipe-thumb"
+          />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Grey Stuff from Beauty and the Beast</h2>
+            <p class="recipe-excerpt">
+              Now, let’s embark on a culinary journey to recreate the enchanting
+              ‘Grey Stuff’ from Beauty and the Beast, a dish as mysterious as it
+              is delightful, promising to add a touch of Disney magic to your
+              dining table.
+            </p>
+            <a
+              href="#"
+              class="read-more"
+              onclick="document.getElementById('recipe2').showModal(); return false;"
+              >Read More</a
+            >
+          </div>
+        </article>
+
+        <!-- recipe 3 -->
+        <article class="recipe-card">
+          <img
+            src="https://nummyrecipes.com/wp-content/uploads/2025/04/Lilos-Peanut-Butter-Sandwiches-from-Lilo-Stitch.jpg"
+            alt="from Lilo & Stitch"
+            class="recipe-thumb"
+          />
+          <div class="recipe-content">
+            <h2 class="recipe-title">
+              Lilo’s Peanut Butter Sandwiches from Lilo & Stitch
+            </h2>
+            <p class="recipe-excerpt">
+              Delightfully simple yet irresistibly comforting, Lilo’s Peanut Butter Sandwiches from Lilo & Stitch capture the essence of childhood nostalgia with a twist. This recipe brings a touch of Hawaiian sweetness to the classic peanut butter sandwich, making it a perfect snack for any time of the day.
+            </p>
+            <a
+              href="#"
+              class="read-more"
+              onclick="document.getElementById('recipe3').showModal(); return false;"
+              >Read More</a
+            >
+          </div>
+        </article>
+      </main>
+
+      <!-- ============================== DIALOGS (full texts) ============================== -->
+      <!-- Dialog 1 -->
+      <dialog id="recipe1" aria-labelledby="recipe1-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close recipe"
+        >
+          ✕
+        </button>
+        <img src="https://nummyrecipes.com/wp-content/uploads/2025/04/Kronks-Spinach-Puffs-from-The-Emperors-New-Groove.jpg" alt="The Last Train full" />
+        <h2 id="recipe1-title">Kronk’s Spinach Puffs from The Emperor’s New Groove</h2>
+        <p>
+            <b>Ingredients</b>
+            <ul>
+                <li>2 cups of fresh spinach, roughly chopped</li>
+                <li>1 cup of ricotta cheese</li>
+                <li>1/2 cup of grated Parmesan cheese</li>
+                <li>1 egg, beaten</li>
+                <li>A pinch of nutmeg</li>
+                <li>Salt and pepper, just a dash</li>
+                <li>1 package of puff pastry sheets, thawed</li>
+                <li>A splash of olive oil</li>
+            </ul>
+        </p>
+        <p>
+            <b>Instructions</b>
+            <ol>
+                <li>Preheat your oven to 375°F (190°C) and line a baking sheet with parchment paper.</li>
+                <li>In a skillet over medium heat, add a splash of olive oil and sauté the spinach until just wilted, about 2 minutes. Let it cool slightly.</li>
+                <li>In a mixing bowl, combine the sautéed spinach, ricotta, Parmesan, beaten egg, nutmeg, salt, and pepper. Mix until well incorporated.</li>
+                <li>Unfold the puff pastry sheets on a lightly floured surface and cut into 12 equal squares.</li>
+                <li>Spoon a tablespoon of the spinach mixture onto the center of each pastry square.</li>
+                <li>Fold the pastry over the filling to form a triangle, pressing the edges firmly with a fork to seal.</li>
+                <li>Place the puffs on the prepared baking sheet and brush the tops with a bit of the remaining beaten egg for a golden finish.</li>
+                <li>Bake for 20-25 minutes, or until the puffs are puffed up and golden brown.</li>
+            </ol>
+        </p>
+      </dialog>
+
+      <!-- Dialog 2 -->
+      <dialog id="recipe2" aria-labelledby="recipe2-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close recipe"
+        >
+          ✕
+        </button>
+        <img src="https://nummyrecipes.com/wp-content/uploads/2025/04/Grey-Stuff-from-Beauty-and-the-Beast.jpg"  alt="from Beauty and the Beast" />
+        <h2 id="recipe2-title">Grey Stuff from Beauty and the Beast</h2>
+        <p>
+            <b>Ingredients</b>
+            <ul>
+                <li>1 cup of vanilla pudding mix</li>
+                <li>2 cups of milk</li>
+                <li>A splash of vanilla extract</li>
+                <li>A couple of drops of black food coloring</li>
+                <li>1/2 cup of crushed chocolate cookies</li>
+                <li>A handful of edible silver pearls for garnish</li>
+            </ul>
+        </p>
+        <p>
+            <b>Instructions</b>
+            <ol>
+                <li>In a medium bowl, whisk together the vanilla pudding mix and milk until smooth, ensuring no lumps remain for a silky texture.</li>
+                <li>Stir in a splash of vanilla extract for an aromatic depth, then add a couple of drops of black food coloring, mixing until you achieve a uniform grey hue.</li>
+                <li>Fold in the crushed chocolate cookies gently, allowing some texture to remain for a delightful crunch.</li>
+                <li>Chill the mixture in the refrigerator for at least 2 hours, or until it’s set firmly, to let the flavors meld beautifully.</li>
+                <li>Before serving, sprinkle a handful of edible silver pearls on top for a shimmering finish that’s as magical as the dish’s origins.</li>
+            </ol>
+        </p>
+      </dialog>
+
+      <!-- Dialog 3 -->
+      <dialog id="recipe3" aria-labelledby="recipe3-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close recipe"
+        >
+          ✕
+        </button>
+        <img
+          src="https://nummyrecipes.com/wp-content/uploads/2025/04/Lilos-Peanut-Butter-Sandwiches-from-Lilo-Stitch.jpg"
+          alt="from Lilo & Stitch"
+        />
+        <h2 id="recipe3-title">Lilo’s Peanut Butter Sandwiches from Lilo & Stitch</h2>
+        <p>
+            <b>Ingredients</b>
+            <ul>
+                <li>A couple of slices of soft white bread</li>
+                <li>A generous smear of creamy peanut butter</li>
+                <li>A drizzle of honey</li>
+                <li>A sprinkle of crushed macadamia nuts</li>
+                <li>A splash of vanilla extract</li>
+            </ul>
+        </p>
+        <p>
+            <b>Instructions</b>
+            <ol>
+                <li>Lay out two slices of soft white bread on a clean, flat surface.</li>
+                <li>Using a butter knife, spread a generous amount of creamy peanut butter evenly on one side of each slice.</li>
+                <li>Lightly drizzle honey over the peanut butter on one slice for a touch of sweetness.</li>
+                <li>Sprinkle a small amount of crushed macadamia nuts over the honey for a crunchy texture and a nod to Hawaiian flavors.</li>
+                <li>Add a splash of vanilla extract to the other slice of peanut butter-covered bread, spreading it gently to incorporate.</li>
+                <li>Press the two slices together, peanut butter sides facing in, to form your sandwich.</li>
+                <li>For an extra touch, trim the crusts off the sandwich and cut it into fun shapes to appeal to the kid in everyone.</li>
+            </ol>
+        </p>
+      </dialog>
+    </body>
+  </body>
+</html>
