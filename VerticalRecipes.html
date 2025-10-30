@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Timeline Recipes</title>
+    <link rel="stylesheet" href="VerticalRecipes.css" />
+  </head>
+  <body>
+    <body>
+      <header>
+        <div class="title">
+          <h1>Disney Recipes – Vertical Timeline</h1>
+          <p class="subtitle">
+            "You're never too old to be young" - Walt Disney
+          </p>
+        </div>
+      </header>
+
+      <main class="timeline">
+        <!-- Item 1 (Left) -->
+        <section class="t-item place-left">
+          <span class="dot" aria-hidden="true"></span>
+          <article class="t-card">
+            <div class="t-inner">
+              <img
+                class="thumb"
+                src="https://th.bing.com/th/id/R.03695bac24d406d0472883ab7adb4764?rik=1BhT%2fJ1ZxdSjCg&riu=http%3a%2f%2fimg.lum.dolimg.com%2fv1%2fimages%2fgallery_princess_ariel_6_d2e808c3.jpeg%3fregion%3d0%2c0%2c2181%2c1223&ehk=OCsU8lNIakzJa%2bjdknYJLKBRk%2bfNLlbnS6yGB0S%2bRls%3d&risl=&pid=ImgRaw&r=0"
+                alt="Ariel Pasta"
+              />
+              <div class="t-body">
+                <h2>Ariel Pasta</h2>
+                <p class="excerpt">
+                  Ariel thinks this colorful combination of garden veggies and shell-shaped pasta is the perfect mix of land and sea.
+                </p>
+                <a
+                  href="#"
+                  class="read-more"
+                  onclick="document.getElementById('recipe1').showModal(); return false;"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Item 2 (Right) -->
+        <section class="t-item place-right">
+          <span class="dot" aria-hidden="true"></span>
+          <article class="t-card">
+            <div class="t-inner">
+              <img
+                class="thumb"
+                src="https://tse1.mm.bing.net/th/id/OIP.UViaPBfh2bd6By7qtHaI6QHaEY?w=1000&h=592&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Beauty and the Beast"
+              />
+              <div class="t-body">
+                <h2>Beef Ragout from Beauty and the Beast</h2>
+                <p class="excerpt">
+                  Beef Ragout from Beauty and the Beast is a dish that promises to transport your dining table straight into the heart of the French countryside. Perfect for a cozy dinner.
+                </p>
+                <a
+                  href="#"
+                  class="read-more"
+                  onclick="document.getElementById('recipe2').showModal(); return false;"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Item 3 (Left) -->
+        <section class="t-item place-left">
+          <span class="dot" aria-hidden="true"></span>
+          <article class="t-card">
+            <div class="t-inner">
+              <img
+                class="thumb"
+                src="https://central.lightcinemas.co.uk/pictures/p/1/0/6/.10602/~iDQmQm4W/Snow_White_BD.jpg"
+                alt="Snow White’s Gooseberry Pie"/>
+              <div class="t-body">
+                <h2>Snow White’s Gooseberry Pie</h2>
+                <p class="excerpt">
+                  Snow White’s Gooseberry Pie is a fairy tale come to life in your kitchen. This pie, with its flaky crust and tart-sweet filling, is a nod to the classic Disney film, offering a taste of magic with every bite.
+
+
+                </p>
+                <a
+                  href="#"
+                  class="read-more"
+                  onclick="document.getElementById('recipe3').showModal(); return false;"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Item 4 (right) -->
+        <section class="t-item place-right">
+          <span class="dot" aria-hidden="true"></span>
+          <article class="t-card">
+            <div class="t-inner">
+              <img
+                class="thumb"
+                src="https://64.media.tumblr.com/d5abc418a3405baa311153e5d85a5ad5/tumblr_inline_mnszwtmqo61qz4rgp.gif"
+                alt="Rapunzel’s Hazelnut Soup from Tangled"/>
+              <div class="t-body">
+                <h2>Rapunzel’s Hazelnut Soup from Tangled</h2>
+                <p class="excerpt">
+                  On a chilly evening, nothing warms the soul quite like a bowl of Rapunzel’s Hazelnut Soup, a dish as enchanting as the tale it hails from. 
+                </p>
+                <a
+                  href="#"
+                  class="read-more"
+                  onclick="document.getElementById('recipe4').showModal(); return false;"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+
+        
+      </main>
+
+      <!-- ============================== DIALOGS (full texts) ============================== -->
+
+      <!-- Dialog 1 -->
+      <dialog id="recipe1" aria-labelledby="recipe1-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close Recipe"
+        >
+          ✕
+        </button>
+        <img
+          src="https://th.bing.com/th/id/R.03695bac24d406d0472883ab7adb4764?rik=1BhT%2fJ1ZxdSjCg&riu=http%3a%2f%2fimg.lum.dolimg.com%2fv1%2fimages%2fgallery_princess_ariel_6_d2e808c3.jpeg%3fregion%3d0%2c0%2c2181%2c1223&ehk=OCsU8lNIakzJa%2bjdknYJLKBRk%2bfNLlbnS6yGB0S%2bRls%3d&risl=&pid=ImgRaw&r=0"
+          alt="Ariel's Pasta"
+        />
+        <h2 id="recipe1-title">Ariel Pasta</h2>
+        <p>
+          <b>Ingredients</b>
+          <ul>
+            <li>1 box of pasta shells.</li>
+            <li>1/2 cup diced red bell pepper.</li>
+            <li>1/2 cup shredded carrots.</li>
+            <li>1/2 cup halved cherry tomatoes.</li>
+            <li>1/2 cup grated parmesan cheese.</li>
+            <li>2 Tbsp snipped chives.</li>
+            <li>1 cup Italian salad dressing.</li>
+            <li>1/4 tsp salt.</li>
+            <li>1/4 tsp ground pepper.</li>
+          </ul>
+        </p>
+        <p>
+            <b>Directions</b>
+            <ol>
+                <li>Prepare the pasta according to the directions on the box.</li>
+                <li>In a large bowl, combine the cooked pasta shells, red pepper, carrots, cherry tomatoes, Parmesan, and chives. Stir with a wooden spoon to mix them.</li>
+                <li>Pour the Italian salad dressing over the pasta, and sprinkle on the salt and pepper. Stir again until all the ingredients are evenly coated.</li>
+                <li>Cover the bowl with plastic wrap and chill until serving time.</li>
+            </ol>
+        </p>
+      </dialog>
+
+      <!-- Dialog 2 -->
+      <dialog id="recipe2" aria-labelledby="recipe2-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close recipe">
+          ✕
+        </button>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.UViaPBfh2bd6By7qtHaI6QHaEY?w=1000&h=592&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beneath the Old Oak full" />
+        <h2 id="recipe2-title">Beef Ragout from Beauty and the Beast</h2>
+        <p>
+            <b>Ingredients</b>
+            <ul>
+                <li>2 lbs of beef chuck, cut into 1-inch cubes</li>
+                <li>A couple of carrots, diced</li>
+                <li>A couple of celery stalks, diced</li>
+                <li>1 large onion, finely chopped</li>
+                <li>A splash of red wine</li>
+                <li>2 cups of beef broth</li>
+                <li>A handful of fresh thyme</li>
+                <li>2 tbsp of tomato paste</li>
+                <li>A drizzle of olive oil</li>
+                <li>Salt and freshly ground black pepper, to your liking</li>
+            </ul>
+        </p>
+
+        <p>
+            <b>Directions</b>
+            <ol>
+                <li>Heat a drizzle of olive oil in a large Dutch oven over medium-high heat until shimmering.</li>
+                <li>Season the beef cubes generously with salt and pepper, then brown them in batches to avoid overcrowding, about 5 minutes per batch. Tip: Don’t rush the browning; it’s key for depth of flavor.</li>
+                <li>Remove the beef and set aside. In the same pot, add the diced carrots, celery, and onion, cooking until softened, about 5 minutes.</li>
+                <li>Stir in the tomato paste and cook for another minute to deepen the flavor.</li>
+                <li>Pour in a splash of red wine, scraping up any browned bits from the bottom of the pot—this is where the magic happens!</li>
+                <li>Return the beef to the pot, add the beef broth and thyme, then bring to a simmer. Tip: For the best results, let it simmer gently, not boil.</li>
+                <li>Cover and cook on low heat for about 2 hours, or until the beef is fork-tender. Tip: Check occasionally to ensure the liquid hasn’t reduced too much; add a bit more broth if needed.</li>
+                <li>Once done, taste and adjust the seasoning with salt and pepper if necessary.</li>
+            </ol>
+        </p>
+      </dialog>
+
+      <!-- Dialog 3 -->
+      <dialog id="recipe3" aria-labelledby="recipe3-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close recipe"
+        >
+          ✕
+        </button>
+        <img
+          src="https://central.lightcinemas.co.uk/pictures/p/1/0/6/.10602/~iDQmQm4W/Snow_White_BD.jpg"
+          alt="Snow White’s Gooseberry Pie"
+        />
+        <h2 id="story3-title">Snow White’s Gooseberry Pie</h2>
+        <p>
+          <b>Ingredients</b>
+          <ul>
+            <li>2 cups of fresh gooseberries, topped and tailed</li>
+            <li>1 cup of granulated sugar, plus a sprinkle more for dusting</li>
+            <li>A splash of lemon juice</li>
+            <li>A couple of tablespoons of cornstarch</li>
+            <li>1 teaspoon of vanilla extract</li>
+            <li>A pinch of salt</li>
+            <li>2 pie crusts (homemade or store-bought), because we’re all about that flaky life</li>
+            <li>1 egg, beaten, for that golden shine</li>
+          </ul>
+        </p>
+        <p>
+            <b>Directions</b>
+            <ol>
+                <li>Preheat your oven to 375°F (190°C) to get it nice and toasty for the pie.</li>
+                <li>In a large bowl, gently toss the gooseberries with sugar, lemon juice, cornstarch, vanilla extract, and salt until the berries are evenly coated. Tip: Let the mixture sit for 10 minutes to draw out the juices.</li>
+                <li>Roll out one pie crust and fit it into a 9-inch pie dish, trimming any excess dough but leaving a bit of overhang for sealing.</li>
+                <li>Pour the gooseberry filling into the crust, spreading it out evenly. Tip: Dot the top with small pieces of butter for extra richness.</li>
+                <li>Roll out the second pie crust and place it over the filling. Trim, seal, and crimp the edges. Cut a few slits in the top crust to allow steam to escape.</li>
+                <li>Brush the top crust with the beaten egg and sprinkle lightly with sugar for a sparkling finish.</li>
+                <li>Bake for 45-50 minutes, or until the crust is golden brown and the filling is bubbly. Tip: Place a baking sheet underneath to catch any drips.</li>
+            </ol>
+        </p>
+      </dialog>
+       <!-- Dialog 4 -->
+      <dialog id="recipe4" aria-labelledby="recipe4-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close recipe"
+        >
+          ✕
+        </button>
+        <img
+          src="https://tse1.mm.bing.net/th/id/OIP.UWWcn1wfw5322ZasmDIhqwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Snow White’s Gooseberry Pie"
+        />
+        <h2 id="recipe4-title">Snow White’s Gooseberry Pie</h2>
+        <p>
+          <b>Ingredients</b>
+          <ul>
+            <li>2 cups of hazelnuts, toasted and skins removed</li>
+            <li>4 cups of vegetable broth, for a rich base</li>
+            <li>A splash of heavy cream, to add silkiness</li>
+            <li>A couple of garlic cloves, minced for a hint of sharpness</li>
+            <li>1 tbsp of olive oil, for sautéing</li>
+            <li>Salt, just enough to enhance the flavors</li>
+          </ul>
+        </p>
+        <p>
+            <b>Directions</b>
+            <ol>
+                <li>Heat the olive oil in a large pot over medium heat, then sauté the minced garlic until fragrant, about 1 minute.</li>
+                <li>Add the toasted hazelnuts to the pot, stirring to coat them in the garlic-infused oil.</li>
+                <li>Pour in the vegetable broth, bringing the mixture to a gentle boil before reducing the heat to simmer for 20 minutes, allowing the flavors to meld.</li>
+                <li>Carefully transfer the soup to a blender, blending until smooth. Tip: For an extra smooth texture, strain the soup through a fine-mesh sieve.</li>
+                <li>Return the soup to the pot, stirring in the heavy cream and salt to taste. Heat through for another 5 minutes on low heat.</li>
+                <li>Serve hot, garnished with a drizzle of cream or a sprinkle of crushed hazelnuts for added texture.</li>
+            </ol>
+        </p>
+      </dialog>
+    </body>
+  </body>
+</html>
