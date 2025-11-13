@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Museum2</title>
+    <link rel="stylesheet" href="Museum2.css" />
+  </head>
+  <body>
+    <body>
+      <header>
+        <div class="mast">
+          <h1>The Grand Egyptian Museum – Sticky Tabs Showcase</h1>
+          <p class="dek">
+            Tap a tab to switch the feature panel. Open the dialog to read the
+            full story.
+          </p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Story tabs">
+          <!-- Radios (one must be checked) -->
+          <input checked="" type="radio" name="tabs" id="t1" />
+          <input type="radio" name="tabs" id="t2" />
+          <input type="radio" name="tabs" id="t3" />
+
+          <!-- Tab labels -->
+          <div class="tabbar">
+            <label
+              class="tab"
+              for="t1"
+              id="tab1"
+              role="tab"
+              aria-controls="p1"
+              aria-selected="true"
+            >
+              <span class="dot" aria-hidden="true"></span>King Thutmose III
+            </label>
+            <label
+              class="tab"
+              for="t2"
+              id="tab2"
+              role="tab"
+              aria-controls="p2"
+              aria-selected="false"
+            >
+              <span class="dot" aria-hidden="true"></span>King Mena
+            </label>
+            <label
+              class="tab"
+              for="t3"
+              id="tab3"
+              role="tab"
+              aria-controls="p3"
+              aria-selected="false"
+            >
+              <span class="dot" aria-hidden="true"></span> Queen Nefertiti
+            </label>
+          </div>
+
+          <!-- Panels -->
+          <section class="panels">
+            <!-- Panel 1 -->
+            <article
+              id="p1"
+              class="panel"
+              role="tabpanel"
+              aria-labelledby="tab1"
+            >
+              <img
+                class="hero"
+                src="https://tse1.mm.bing.net/th/id/OIP.jNeMg6VhtB-FvK45eW2odAAAAA?cb=ucfimg2ucfimg=1&w=338&h=450&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="King Thutmose III"
+              />
+              <div class="pad">
+                <span class="kicker">The Age of Prosperity</span>
+                <h2 class="title">King Thutmose III</h2>
+                <p class="lede">The Great Warrior</p>
+                <div class="actions">
+                  <a
+                    class="read-more"
+                    href="#"
+                    onclick="document.getElementById('king1').showModal(); return false;"
+                    >Read More</a
+                  >
+                  <a
+                    class="pill"
+                    href="#"
+                    onclick="document.getElementById('t2').checked = true; return false;"
+                    >Next: King Mena →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Panel 2 -->
+            <article
+              id="p2"
+              class="panel"
+              role="tabpanel"
+              aria-labelledby="tab2"
+            >
+              <img
+                class="hero"
+                src="https://th.bing.com/th/id/OIP.3Wre60wwOz5LVaSaTz2a_AHaFs?w=193&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.1&pid=1.7&rm=3&ucfimg=1"
+                alt="King Mena"
+              />
+              <div class="pad">
+                <span class="kicker">The Age of Unification</span>
+                <h2 class="title">King Mena</h2>
+                <p class="lede">Unifier of the Two Lands</p>
+                <div class="actions">
+                  <a
+                    class="read-more"
+                    href="#"
+                    onclick="document.getElementById('king2').showModal(); return false;"
+                    >Read More</a
+                  >
+                  <a
+                    class="pill"
+                    href="#"
+                    onclick="document.getElementById('t3').checked = true; return false;"
+                    >Next: Queen Nefertiti →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Panel 3 -->
+            <article
+              id="p3"
+              class="panel"
+              role="tabpanel"
+              aria-labelledby="tab3"
+            >
+              <img
+                class="hero"
+                src="https://th.bing.com/th/id/OIP.iUgKIkXFwXiO4Ehw8p5-rwHaK2?w=200&h=312&c=10&o=6&cb=ucfimg1&pid=genserp&rm=2&ucfimg=1"
+                alt="Queen Nefertiti"
+              />
+              <div class="pad">
+                <span class="kicker">Beauty</span>
+                <h2 class="title">Queen Nefertiti</h2>
+                <p class="lede">The beautiful one has come</p>
+                <div class="actions">
+                  <a
+                    class="read-more"
+                    href="#"
+                    onclick="document.getElementById('king3').showModal(); return false;"
+                    >Read More</a
+                  >
+                  <a
+                    class="pill"
+                    href="#"
+                    onclick="document.getElementById('t1').checked = true; return false;"
+                    >Restart: King Thutmose III ↺</a
+                  >
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </header>
+
+      <!-- ============================== DIALOGS (full texts) ============================== -->
+
+      <!-- Dialog 1 -->
+      <dialog id="king1" aria-labelledby="king1-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close story"
+        >
+          ✕
+        </button>
+        <img
+          src="https://tse1.mm.bing.net/th/id/OIP.jNeMg6VhtB-FvK45eW2odAAAAA?cb=ucfimg2ucfimg=1&w=338&h=450&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="King Thutmose III"
+        />
+        <h2 id="king1-title">King Thutmose III</h2>
+        <p>
+          <em
+            >Thutmose III (sometimes written as Thutmosis or Tuthmosis, in
+            Egyptian hieroglyphs: 𓅝𓄟𓄤𓆣), also known as Thutmose the Great,
+            (1479–1425 BCE), was the fifth pharaoh of the Eighteenth Dynasty in
+            ancient Egypt. He is considered one of the greatest warriors,
+            military commanders, and strategists in history, known as Egypt’s
+            first true fighting pharaoh and the most prominent conqueror of the
+            New Kingdom. Thutmose III officially ruled Egypt from his coronation
+            on April 28, 1479 BCE, when he was two years old, until his death on
+            March 11, 1425 BCE. However, the first 22 years of his reign were a
+            co-regency with his stepmother and aunt, Hatshepsut, who held the
+            title of pharaoh. After Hatshepsut’s death in 1458 BCE, Thutmose III
+            became the sole ruler of Egypt. He led between 17 and 20 military
+            campaigns, all victorious, bringing the Egyptian Empire to the peak
+            of its expansion and power. The details of these campaigns are
+            recorded in the inscriptions known as the Annals of Thutmose III. He
+            is also credited with founding the ancient Egyptian navy, considered
+            the first organized naval fleet in ancient history. Historian
+            Richard A. Gabriel described him as “Napoleon of Egypt.” Two years
+            before his death, after the death of his eldest son and heir
+            Amenemhat, Thutmose III appointed his other son, Amenhotep II, as
+            co-regent and designated successor.</em
+          >
+        </p>
+        <p>
+          <b>His military life</b>
+          <br />
+          Thutmose III focused on the army, making it professional and equipping
+          it with cavalry and war chariots. During his reign, the ancient
+          Egyptians, thanks to him, mastered the craft of making bows and
+          arrows. In contrast to Thutmose’s era, when Hatshepsut ruled, she
+          followed a peaceful policy with the Egyptian spheres of influence in
+          Palestine and Nubia and with neighboring regions. She focused on the
+          navy and sent maritime expeditions to the land of Punt and to the
+          coasts of Lebanon for trade. Some protectorates in Syria and Mitanni
+          seized the opportunity to rebel against Egyptian rule. As soon as
+          Thutmose III ascended the throne after Hatshepsut’s death, he had to
+          restore Egyptian control over those regions to secure the country’s
+          borders. He launched **sixteen military campaigns** in Asia (the
+          regions of Syria and Palestine), through which he consolidated his
+          influence there and extended Egypt’s control as far south as Nubia.
+          The prince of the city of **Kadesh** in Syria led a coalition of Asian
+          princes in the Levant against Egypt, numbering **twenty-three
+          armies**. It was expected that Thutmose III would reinforce his
+          defenses and forces on the Egyptian border near Sinai. However,
+          Thutmose decided to march with his massive armies to confront these
+          forces on their own soil, as part of a plan to expand the Egyptian
+          Empire to its maximum possible extent and secure the borders against
+          hostile armies.
+        </p>
+        <p>
+          <b>Battle of Megiddo</b>
+          <br />
+          Thutmose III built fortresses and strongholds, trained his soldiers
+          with the best drills, and supplied them with powerful innovative
+          weapons such as advanced bows and arrows and expanded the use of
+          chariots in battle. In the **Battle of Megiddo** campaign, he divided
+          his army into a center and two wings and employed military tactics and
+          maneuvers that were previously unknown. He then led his army from
+          Qantara, covering **150 miles in ten days**, reaching Gaza. From
+          there, he marched another **80 miles in eleven days** between Gaza and
+          one of the cities at the foot of Mount Carmel. There, Thutmose III
+          held a war council with his officers after learning that the prince of
+          Kadesh had come to the city of **Megiddo** and gathered around him
+          **230 princes** with their armies. They encamped in the fortified city
+          of Megiddo to halt the advance of Thutmose III and his forces. There
+          were **three routes** to reach Megiddo: two of them circled around the
+          base of Mount Carmel, while the third was a narrow pass but led
+          directly to Megiddo. Thutmose decided that the army would take the
+          third pass—a daring move that later turned the tide of the battle. The
+          forces of the prince of Kadesh and his allies had positioned
+          themselves at the end of the two wide roads, believing that the
+          Egyptian army would come from one or both of them. At dawn the next
+          day, King Thutmose III ordered the army to reassemble the war chariots
+          and prepare for a surprise attack. His forces charged, with Thutmose
+          at the front leading in a **semicircular formation** toward Megiddo.
+          The surprise was that the Egyptians launched this overwhelming
+          assault, throwing the enemy into confusion and disarray. Their armies
+          fell into chaos and disorder, and the commanders and troops began to
+          flee, abandoning their large chariots and their camp filled with
+          spoils, to take refuge inside the fortified city. Because the Egyptian
+          soldiers became preoccupied with collecting the spoils, the Asians
+          were able to escape into the city and fortify themselves there. The
+          consequence of the army’s distraction with gathering loot—when they
+          could have completely destroyed the forces of the prince of Kadesh and
+          achieved total victory—was that Thutmose III was forced to **besiege
+          Megiddo for seven long months** until the princes surrendered. They
+          sent their sons carrying weapons to surrender them to King Thutmose
+          III.
+        </p>
+        <p>
+          <b>His architectural works</b>
+          <br />
+          Thutmose III built numerous temples in Thebes, including two, one of
+          which was adjacent to Hatshepsut’s temple at Deir el-Bahri. He also
+          constructed the massive **sixth and seventh pylons** and the
+          **Festival Hall** at the Karnak Temple, completed the Temple of Hapou
+          that Hatshepsut had begun, and erected a temple to the god **Ptah** in
+          his homeland at Memphis. This temple contains three chambers: the
+          first for Ptah, the second for **Hathor**, goddess of Thebes, and the
+          third for the goddess **Sekhmet**, wife of Ptah, represented by a
+          statue of her with a lioness head crowned with a sun disk. He also had
+          temples in **Amada** and **Semna**, built a temple on **Elephantine**
+          for the goddess **Satet**, and left remains in **Kom Ombo**, **Edfu**,
+          **Heliopolis**, and **Armant**. Thutmose III erected **at least seven
+          obelisks**, most of which are now in various world capitals: - The
+          obelisk in **London** (one of two he erected in front of the Sun
+          Temple at Heliopolis). A Greek engineer named **Pontius** moved both
+          to Alexandria to place them before the Temple of Isis. This obelisk
+          fell from its base in the 14th century CE. It is said that **Muhammad
+          Ali Pasha** gifted it to Britain in **1831 CE**, but it did not arrive
+          in London until **1878 CE**, having lain on the ground all that time
+          due to transportation difficulties. **Sir Erasmus Wilson** funded its
+          transport and built a special ship for it. The ship nearly sank in a
+          storm in the **Bay of Biscay**, but the obelisk was saved and arrived
+          safely. Notably, this obelisk was damaged by shrapnel during World War
+          II on the **River Thames**. It is known as **Cleopatra’s Needle**,
+          though it was originally erected by Thutmose III in front of the
+          Heliopolis temple. - Another obelisk, now in **Istanbul**, is one of
+          two Thutmose erected before the **seventh pylon** (a grand gateway) at
+          Karnak Temple. Emperor **Theodosius** moved it in **510 CE**. In fact,
+          this obelisk represents only the **upper part** of a much taller
+          original—longer than any obelisk existing today. - Another obelisk is
+          in **New York**, erected by Thutmose in front of the Sun Temple. It is
+          the **twin** of the London obelisk and now stands in **Central Park**.
+          - In his later years, Thutmose ordered an obelisk to be placed before
+          the **eighth pylon** at Karnak, but it was left unfinished due to his
+          death. It remained in place for **35 years** until **Thutmose IV**
+          discovered it and erected it in its intended location. It is now in
+          **Rome** in front of the **Basilica of St. John Lateran**.
+          **Constantine the Great**, ruler of the Roman Empire, moved this
+          **455-ton** obelisk to Alexandria in **330 CE** to send it to
+          Byzantium to beautify his new capital, but failed to transport it
+          further. It remained there for **27 years** until his son
+          **Constantius** moved it to Rome and erected it in the **Circus
+          Maximus**. In **1587 CE**, it was rediscovered, broken into **three
+          pieces**. **Domenico Fontana** repaired and restored it on the orders
+          of **Pope Sixtus V** and installed it in its current location in the
+          **Lateran Square**. He also ordered a **cross** to be placed on top,
+          believing it symbolized the **triumph of Christianity over paganism**.
+        </p>
+      </dialog>
+
+      <!-- Dialog 2 -->
+      <dialog id="king2" aria-labelledby="king2-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close story"
+        >
+          ✕
+        </button>
+        <img
+          src="https://th.bing.com/th/id/OIP.Bg638pWmnOS3IY0Ykij6-gHaE0?w=230&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.1&pid=1.7&rm=3&ucfimg=1"
+          alt="King Mena"
+        />
+        <h2 id="story2-title">King Mena</h2>
+        <p>
+          <em
+            >King Menes (Egyptian: Mani; Ancient Greek: Μήνης; English: Menes)
+            was an ancient Egyptian king from the Early Dynastic Period, one of
+            the kings of Egypt during the Early Dynastic Period in ancient
+            Egypt. He is credited with unifying Upper and Lower Egypt and is
+            considered the founder of the First Dynasty. Menes' identity is a
+            subject of debate among Egyptologists. Some attribute it to King
+            Hor-Aha, while others link it to King Narmer. Both pharaohs are
+            credited with unifying Egypt to varying degrees by different
+            authorities.</em
+          >
+        </p>
+        <p>
+          <b>His biography</b>
+          <br />
+          King Menes, Unifier of the Two Lands, was an Egyptian king from the
+          First Egyptian Dynasty in the city of Thebes (modern Luxor). He
+          succeeded in unifying the Two Lands (the northern and southern
+          kingdoms) around 3200 BCE. For this great achievement, he was granted
+          several titles, such as "King of the Two Lands," "Lord of the Two
+          Crowns," "Falcon of the South," and "Cobra of the North." King Menes
+          is considered the founder of the First Dynasty of ancient Egyptian
+          kings.
+        </p>
+        <p>
+          <b>Origin of the name</b>
+          <br />
+          The name Menes is mentioned in some ancient Egyptian writings as
+          (Meni), and the Egyptians later altered the name to Mena. Strangely,
+          the word (Meni) means "to establish" or "to build" in the ancient
+          Egyptian language, as if the Egyptians wanted to honor his achievement
+          in his name. Some historians confirm that (Meni) is a verb or title,
+          not a personal name. In the Coptic (Egyptian) language, the name Mena
+          has many synonyms, including (stable, firm, established, enduring,
+          lasting, or founder). Thus, Mena is considered the doer of the verb
+          "Meni" in the Egyptian language. The commonly used name Mena derives
+          from Manetho, an Egyptian historian and priest who lived during the
+          Ptolemaic Kingdom. Manetho recorded the name in Greek as Μήνης
+          (translated: Mênês). An alternative Greek form, Μιν (phonetically
+          translated: Min), was cited by the 5th-century BCE historian
+          Herodotus, but this variant is no longer accepted; it appears to have
+          resulted from contamination with the name of the god Min. The Egyptian
+          form, mnj, is taken from the king lists in Turin and Abydos, dating to
+          the Nineteenth Dynasty, with its pronunciation reconstructed as
+          */maˈnij/. By the early New Kingdom, changes in the Egyptian language
+          led to the name being pronounced */maˈneʔ/. The name mnj means "he who
+          endures," which I. E. S. Edwards (1971) suggests may have been coined
+          as "merely a descriptive epithet referring to a semi-legendary hero
+          [...] whose [personal] name has been lost." Rather than a specific
+          individual's name, it may collectively refer to the Naqada III rulers:
+          Ka, Scorpion II, and Narmer.
+        </p>
+        <p>
+          <b>Creation of the White Wall Fortress</b>
+          <br />
+          King Menes thought of choosing a site that lay midway between the
+          kingdoms of the North and South so that he could rule Egypt from it.
+          He established a fortress surrounded by a white wall and named it
+          **Men-nefer**, meaning "the beautiful harbor" or "the white wall."
+          Part of it still remains to this day. Memphis became the first capital
+          of Egypt after unification. However, due to the strong influence of
+          the southern city kings, Memphis did not become firmly established as
+          the capital of the country, nor did it reach the height of its power
+          and rule until the Old Kingdom era. Later, the Greeks called it
+          **Memphis** or "the Way of the Rams." When the Arabs conquered Egypt,
+          they named it **Menf**, and it is now the area of **Mit Rahina**,
+          which belongs to the city and center of **Badrshein** in **Giza
+          Governorate**.
+        </p>
+        <p>
+          <b>Hor-Aha</b>
+          <br />
+          Hor-Aha is the name of the king who succeeded King Menes. It belongs
+          to the Horus name category among royal titles. The meaning of Hor-Aha
+          is "Horus who fights." It is called the Horus name in reference to the
+          god Horus, and it is written inside the serekh sign—which represents
+          the palace facade and was later used to mean "palace" (as transmitted
+          by the Hebrews to the Arabs as "sarh"). It is also called the Ka name
+          in reference to the Ka. It is one of the oldest names, used by kings
+          of the Predynastic period. He is considered the earthly embodiment of
+          the god Horus, the most important deity in the lives of the ancient
+          Egyptians.
+        </p>
+      </dialog>
+
+      <!-- Dialog 3 -->
+      <dialog id="king3" aria-labelledby="king3-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close story"
+        >
+          ✕
+        </button>
+        <img
+          src="https://th.bing.com/th/id/OIP.iUgKIkXFwXiO4Ehw8p5-rwHaK2?w=200&h=312&c=10&o=6&cb=ucfimg1&pid=genserp&rm=2&ucfimg=1"
+          alt="Queen Nefertiti"
+        />
+        <h2 id="king3-title">Queen Nefertiti</h2>
+        <p>
+          <em
+            >Queen Nefertiti, whose name means "the beautiful one has come," was
+            the wife of King Amenhotep IV (who later became Akhenaten), the
+            famous pharaoh of the Eighteenth Dynasty, and the mother-in-law of
+            Tutankhamun. She was considered one of the most powerful women in
+            ancient Egypt. She lived for a short time after her husband's death
+            and helped Tutankhamun ascend to the throne. This beautiful queen
+            held a high status during her husband's reign. She belonged to the
+            Eighteenth Dynasty and lived in the 14th century BCE. Like what
+            happened with her husband, her name was erased from historical
+            records and her images were defaced after her death. Nefertiti
+            became famous for the painted limestone bust of her face, one of the
+            finest works of art from the ancient era and the most famous
+            depiction of Queen Nefertiti.</em
+          >
+        </p>
+        <p>
+          <b>Her life</b>
+          Queen Nefertiti shared with her husband the worship of the new
+          religion, which was the cult of Aten, the power of the sun disk. She
+          and her husband were the intermediaries between the people and Aten.
+          It was assumed that full blessings were granted only when the royal
+          couple united. During the early years of her husband's reign,
+          Nefertiti changed her name in accordance with her new faith to
+          Neferneferuaten Nefertiti, meaning "Aten shines because the beautiful
+          one has come." Nefertiti supported her husband during the religious
+          and social reforms, then moved with him to Akhetaten (Tell el-Amarna).
+          She appeared with him during celebrations and rituals, in family
+          scenes, and even in traditional depictions of military campaigns,
+          where she was shown defeating enemies.
+        </p>
+        <p>
+          <b
+            >Her bust "bust = half-statue (of the face, neck, and shoulders)"</b
+          >
+          Nefertiti is remembered for the painted and sculpted limestone bust of
+          her face, one of the finest works of art from the ancient era and the
+          most famous depiction of Queen Nefertiti. It was discovered by the
+          German Egyptologist **Ludwig Borchardt** on December 6, 1912, in the
+          workshop of the sculptor Thutmose at Tell el-Amarna. Borchardt
+          smuggled the complete (undamaged) bust to his home in the Zamalek
+          district of Cairo, and from there, he shipped it to Germany, hidden
+          among worthless broken pottery pieces sent to Berlin for restoration.
+          Another bust of Nefertiti’s head, made of red quartzite and decorated
+          with ink touches, exists in the Egyptian Museum. It is no less precise
+          in craftsmanship than the one in Berlin but is less famous. It is
+          still unknown whether a mummy of Queen Nefertiti exists. What is
+          certain is that scientists found mummies in a secret chamber in
+          Akhenaten’s tomb. In the 19th century, French archaeologist **Victor
+          Loret**, while opening one of the crypt walls, discovered a side
+          chamber containing three mummies: one male and two female, one younger
+          than the other. At the time, these mummies attracted little attention.
+          They were photographed in 1907 and then forgotten. Recently, however,
+          doubts have arisen among scholars that one of these two female mummies
+          might be Nefertiti. In 2002, British researcher **Joann Fletcher**
+          from the University of York, an expert in mummies, announced that the
+          remains of the younger mummy belonged to Queen Nefertiti, stating it
+          was an indisputable fact. Joyfully, she called it "the greatest
+          discovery of my life!" after being allowed to subject the mummy to
+          X-ray examinations. The strongest evidence that one of these mummies
+          is "the beautiful one who has come" lies in the high quality of the
+          embalming and the anatomical resemblance to known descriptions of
+          Nefertiti’s remains—at least as Fletcher saw it in the neck,
+          shoulders, and especially the face. The mummy was bald, shaved to wear
+          a special wig, and Fletcher appears to have found the wig. However,
+          this claim later became highly controversial and disputed by Egyptian
+          authorities. Examinations also revealed traces of a leather headband
+          imprinted on the mummy’s forehead and evidence of two earrings in the
+          left ear—features previously seen in some images of the queen. Shortly
+          afterward, a broken hand was found near the mummy, holding a scepter—a
+          known symbol of pharaonic authority. Thus, Joann Fletcher had no doubt
+          that Nefertiti’s remains had finally been found. In contrast, her
+          colleagues expressed skepticism, believing the remains were merely
+          those of a young woman from the royal family who died during the 18th
+          Dynasty. Dr. **Zahi Hawass**, former Egyptian Minister of State for
+          Antiquities and now Secretary-General of the Supreme Council of
+          Antiquities—considered the leading Egyptologist—criticized Fletcher,
+          asserting that the mummy she referred to belonged to a girl aged
+          16–20, while Queen Nefertiti was older. Currently, Egyptologists are
+          studying the second female mummy from Akhenaten’s tomb. Here too,
+          similarities with the queen can be noted, and the final word may come
+          from DNA analysis. Such tests have already helped identify both
+          Tutankhamun’s grandmother and Akhenaten himself, who was indeed
+          Tutankhamun’s father. The question remains: Is the mummy known as
+          **KV35YL** Queen Nefertiti? Perhaps. Or perhaps not. Doubts about her
+          maternity are not directed only at her but also at Akhenaten’s sister.
+          It is known that Nefertiti was his primary wife.
+        </p>
+        <p>
+          <b>End of her life</b>
+          One of their daughters, Meketaten, died, and their grief over her was
+          depicted in some wall paintings. After their daughter's death,
+          Nefertiti disappeared from the royal court, and her daughter Meritaten
+          took her place, receiving the title of Great Royal Wife. After the
+          twelfth year of Akhenaten's reign, Nefertiti vanished, and no further
+          mention of her exists. It is believed that she died and was buried in
+          a tomb at Akhetaten. It is also thought that Tutankhamun later moved
+          her mummy along with his father Akhenaten's when Akhetaten was
+          abandoned.
+        </p>
+        <p>
+          <b>Her tomb</b>
+          <br />
+          Egyptologists have been unable to determine the location of
+          Nefertiti's tomb for years of research following the discovery of
+          Tutankhamun's tomb. In 2015, Dr. Nicholas Reeves from the University
+          of Arizona announced that he may have located the aforementioned
+          queen's tomb and that she might have been secretly buried inside
+          Tutankhamun's tomb. This is because scans revealed the possible
+          existence of an entrance in Tutankhamun's tomb. This door might lead
+          to Queen Nefertiti's burial place. Digital radar scanning showed
+          traces of two locations that were once used as doors. Consequently,
+          Reeves hypothesized the existence of a secret passage leading to other
+          burial chambers. He stated that this is likely the reason why
+          Tutankhamun's tomb is smaller than the other pharaohs' tombs in Egypt.
+        </p>
+      </dialog>
+    </body>
+  </body>
+</html>
