@@ -1,0 +1,39 @@
+body{font-family: Cambria; padding: 2rem;}
+.container{
+    width: 600px;
+    height: 400px;
+    border: 2px solid #ccc;
+    background: #90EE90;
+    position: relative;
+    margin: auto;
+}
+.box{
+    position: absolute;
+    display: flex;
+    opacity: 0.9;
+    width:100px;
+    height: 100px;
+    color:aliceblue;
+    font-size: 1.1;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    top: 50px;
+    left: 20px;
+    background: #228B22;
+    z-index: 1;
+}
+.box2{
+    top: 20px;
+    left: 10px;
+    background: #6B8E23;
+    z-index: 0;
+}
+.box3{
+    top:10px;
+    left: 5px;
+    background: #ADFF2F;
+    z-index: 2;
+}

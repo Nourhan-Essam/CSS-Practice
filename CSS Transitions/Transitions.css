@@ -1,0 +1,63 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body{
+    font-family: "Cambria";
+    background: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+h1, h2{text-align: center; margin-bottom: 1rem;}
+section{margin-bottom: 3rem;}
+
+ /* 📐 Flex wrapper for demo tiles */
+ .demo-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+  /* 🧱 Demo tile base look */
+  .demo-box{
+    width: 100px; height: 100px;
+    background: #e74c3c;    /* default red */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .label{text-align: center; font-size: 0.85rem; color: #555; margin-top: 0.5rem; max-width: 100px;}
+
+  /* ───────────── 1) Width Expansion ─────────────*/
+  .width-demo{
+    transition-property: width; /* animate width only */
+    transition-duration: 2s;    /* over two seconds */
+  }
+  .width-demo:hover{width: 200px;}  /* new width triggers the transition */
+
+  /* ────────── 2) Delayed Background-Color ──────────*/
+  .delay-demo{transition: background-color 1s ease 0.5s;}
+  .delay-demo:hover{background-color: #3498db;} /* blue after delay */
+
+  /* ─────────── 3) Easing Curve Comparison ───────────*/
+  .timing-demo{transition: transform 1s;}
+  .timing-demo.ease:hover{transition-timing-function: ease; transform: translateY(-20px);}    /* default “ease” curve : Slow start → speed up → slow end */
+  .timing-demo.linear:hover{transition-timing-function: linear; transform: translateY(-20px);}  /* constant speed from start to end */
+  .timing-demo.in-out:hover{transition-timing-function: ease-in-out; transform: translateY(-20px);}  /* Slow start → fast middle → slow end  */
+
+  /* ─────── 4) Multiple-Property Shorthand ───────*/
+  .shorthand-demo{
+    transition: background-color 0.8s ease-in-out 0.2,
+    transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .shorthand-demo:hover{
+    background-color: #2ecc71;  /* green fade, delayed   */
+    transform: rotate(15deg) scale(1.2);   /* bounce-eased spin+zoom */
+  }

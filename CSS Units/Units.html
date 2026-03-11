@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Example</title>
+    <link rel="stylesheet" href="Units.css">
+</head>
+<body>
+    <h2>Pixels Example</h2>
+    <div class="pixels-box">300px * 150px</div>
+
+    <h3 class="heading">18pt Heading</h3>
+    <p class="body-text">This Paragraph is set in 12pt, matching common typography standards.</p>
+
+    <h2>Percentage Example</h2>
+    <div class="container">
+        <div class="percent-box">50% width, 2% padding</div>
+    </div>
+
+    <h2>Em Example</h2>
+    <div class="em-box">2em font-size, 1em padding</div>
+
+    <h2>Em Compunding Demonstration</h2>
+    <div class="parent">
+        Parent Class with 24px
+        <div class="child">
+            Child class with 36px inherited from Parent class
+            <div class="grandChild"></div>
+              GrandChild Class with 54px inherited from Child Class
+        </div>
+    </div>
+
+    <h2>Rem Example</h2>
+    <div class="parent2">
+        Parent2 Class with <strong>24px</strong>(1.5rem * 16px(from body) = 24px).
+        <div class="child2">
+            Child2 Class with <strong>24px</strong>(1.5rem * 16px(from body) = 24px).
+            <div class="grandchild2">
+                GrandChild2 Class with with <strong>24px</strong>(1.5rem * 16px(from body) = 24px).
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <div>
+            <h1>Viewport Units: vw & vh</h1>
+            <p>Resize your browser to see the text and layout adapt in real time.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Responsive Content Section</h2>
+        <p>
+            This container uses <strong>5vh</strong> vertical padding and <strong>5vw</strong> horizontal padding.
+            The headings and paragraphs scale with the viewport for consistent design across devices.
+        </p>
+    </div>
+
+    <h1>vmin & vmax Responsive Demo</h1>
+    <div class="box">
+        20vmin × 20vmin
+    </div>
+    <div class="artboard">
+        Artboard using<br>min(100vmax,100vmin)
+    </div>
+    <div class="avatar"></div>
+    <p style="text-align:center; font-size: 2vmax; color: #424242;">
+    Resize the browser to see everything scale!
+  </p>
+
+  <header>
+    <h1>Demonstrating the <code>ch</code> Unit</h1>
+    <p class="note">1ch ≈ the width of the “0” glyph in the current font.</p>
+  </header>
+
+  <section>
+    <h2>Readable Text Container (≈60ch)</h2>
+    <div class="container-60ch">
+      <p>
+        Limiting paragraphs to around <strong>60ch</strong> characters creates an ideal line length for readability. 
+        This container will never exceed the width required to display sixty “0” glyphs in a row.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Input Field Sized with <code>ch</code></h2>
+    <label for="username">Username (30ch wide):</label>
+    <input id="username" class="input-30ch" type="text" placeholder="Enter up to 30 chars…">
+  </section>
+
+  <section>
+    <h2>Code Block with Fixed <code>ch</code> Width</h2>
+    <pre class="code-40ch">
+<!-- A simple HTML snippet -->
+<div class="box">
+  <h1>Title</h1>
+  <p>Paragraph text here.</p>
+</div>
+    </pre>
+    <p class="note">
+      The code block is set to <strong>40ch</strong>, ensuring each line fits approximately forty characters before wrapping.
+    </p>
+  </section>
+
+  <header>
+    <h1>Demonstrating the <code>ex</code> Unit</h1>
+    <p>1ex ≈ the x-height (lowercase “x”) of the current font.</p>
+  </header>
+
+  <section>
+    <h2>Line-Height Example</h2>
+    <div class="line-ex">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut arcu vitae 
+      purus interdum sollicitudin. Donec nec sapien non risus tincidunt accumsan sit 
+      amet a mauris. Curabitur at ex nec mauris vehicula tincidunt.
+    </div>
+  </section>
+
+  <section>
+    <h2>Box Dimensions Example</h2>
+    <div class="box-ex">
+      .box-ex<br>
+      width: 20ex;<br>
+      height: 10ex;
+    </div>
+  </section>
+
+  <section>
+    <h2>Padding Example</h2>
+    <div class="pad-ex">
+      This container has <strong>3ex</strong> of padding on all sides.
+    </div>
+  </section>
+
+  <footer>
+    Resize your browser or change the font-size in DevTools to see how <code>ex</code> adapts to the x-height.
+  </footer>
+</body>
+</html>

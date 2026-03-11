@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Museum</title>
+    <link rel="stylesheet" href="NewMuseum.css" />
+  </head>
+  <body>
+    <body>
+      <header>
+        <div class="mast">
+          <h1>The Grand Egyptian Museum – 3D Flip Cards</h1>
+          <p class="dek">
+            Flip a card to reveal a clean, text‑only preview. Click
+            <em>Read More</em> to open the full story dialog.
+          </p>
+        </div>
+      </header>
+
+      <main class="grid" aria-label="Flip card story grid">
+        <!-- Tile 1 -->
+        <div class="tile">
+          <input
+            class="flip-toggle"
+            type="checkbox"
+            id="flip1"
+            aria-controls="flip1-card"
+          />
+          <div
+            class="flip"
+            id="flip1-card"
+            role="group"
+            aria-label="The Last Train card"
+          >
+            <!-- Front -->
+            <article class="face front">
+              <img
+                class="hero"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ramses_II_British_Museum.jpg/250px-Ramses_II_British_Museum.jpg"
+                alt="King Ramses II"
+              />
+              <div class="pad">
+                <h2 class="title">King Ramses II</h2>
+                <p class="meta">The Pharaoh who reshaped Egyptian glory</p>
+              </div>
+              <div class="pad" style="padding-top: 0">
+                <p class="excerpt" style="color: var(--muted)">
+                  Flip to preview the opening and actions.
+                </p>
+              </div>
+              <label
+                data-front=""
+                class="flip-btn"
+                for="flip1"
+                aria-controls="flip1-card"
+                aria-label="Flip card"
+                >Flip</label
+              >
+            </article>
+
+            <!-- Back (TEXT ONLY) -->
+            <article class="face back">
+              <div class="back-pad">
+                <h2 class="title">King Ramses II</h2>
+                <p class="meta">History • ~ 6 min read</p>
+                <p class="excerpt">
+                  The statue of Ramses II was moved in the early 1950s and
+                  placed in one of Cairo’s most famous squares, **Bab Al-Hadid
+                  Square**, which was later renamed **Ramses Square**. On
+                  **August 25, 2006**, the statue was relocated from its
+                  prominent location in central Cairo, in front of the main
+                  railway station, to the **Giza pyramids area** for restoration
+                  work that lasted about a year, pending the completion of the
+                  **Grand Egyptian Museum**.
+                </p>
+                <p class="hint">
+                  Open the full story in a modal to continue reading.
+                </p>
+              </div>
+              <div class="actions">
+                <a
+                  class="read-more"
+                  href="#"
+                  onclick="document.getElementById('king1').showModal(); return false;"
+                  aria-label="Read about King Ramses II"
+                  >Read More</a
+                >
+                <label
+                  data-back=""
+                  class="btn"
+                  for="flip1"
+                  aria-controls="flip1-card"
+                  aria-label="Flip back"
+                  >Back</label
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Tile 2 -->
+        <div class="tile">
+          <input
+            class="flip-toggle"
+            type="checkbox"
+            id="flip2"
+            aria-controls="flip2-card"
+          />
+          <div
+            class="flip"
+            id="flip2-card"
+            role="group"
+            aria-label="King Tutankhamun card"
+          >
+            <!-- Front -->
+            <article class="face front">
+              <img
+                class="hero"
+                src="https://th.bing.com/th/id/OSK.HEROUSBM3GAPrODsMh-Wc88zb4_pDjr28xleCdT4A4TKvR4?w=296&h=176&c=13&rs=2&o=6&oif=webp&cb=ucfimg1&dpr=1.1&pid=SANGAM&ucfimg=1"
+                alt="King Tutankhamun"
+              />
+              <div class="pad">
+                <h2 class="title">King Tutankhamun</h2>
+                <p class="meta">The Young King</p>
+              </div>
+              <div class="pad" style="padding-top: 0">
+                <p class="excerpt" style="color: var(--muted)">
+                  Flip to see a text‑only teaser and actions.
+                </p>
+              </div>
+              <label
+                data-front=""
+                class="flip-btn"
+                for="flip2"
+                aria-controls="flip2-card"
+                aria-label="Flip card"
+                >Flip</label
+              >
+            </article>
+
+            <!-- Back (TEXT ONLY) -->
+            <article class="face back">
+              <div class="back-pad">
+                <h2 class="title">King Tutankhamun</h2>
+                <p class="meta">The Young King • ~ 5 min read</p>
+                <p class="excerpt">
+                  The significance of King Tutankhamun’s collection lies in
+                  several key aspects. First, the treasure of Tutankhamun is the
+                  most complete royal treasure ever discovered, unmatched in
+                  history. It consists of 358 pieces, including the magnificent
+                  golden mask and three anthropoid coffins, one made of solid
+                  gold and the other two of gilded wood. Second, these artifacts
+                  date back to the Eighteenth Dynasty, the most prosperous and
+                  celebrated period of the New Kingdom, when Egypt opened to the
+                  regions of the ancient Near East through military campaigns
+                  and trade exchanges involving raw materials, manufactured
+                  goods, and the flourishing work of craftsmen and artists.
+                  Third, this vast collection remained entirely in Egypt,
+                  providing a detailed picture of how a royal tomb was prepared
+                  and furnished. It includes everyday objects such as dolls and
+                  toys, complete furniture, tools and weapons, statues of
+                  deities connected with funerary rituals, and the famous silver
+                  and copper trumpets of Tutankhamun. All these treasures are
+                  now housed in the Egyptian Museum in Cairo. Finally, this
+                  remarkable treasure reveals much about the king’s personal
+                  life — his passion for hunting, his relationship with his wife
+                  Ankhesenamun (believed to be his relative), and insights into
+                  his court, officials, and artistic achievements. Among the
+                  items is also the only surviving royal throne from ancient
+                  Egyptian civilization.
+                </p>
+                <p class="hint">
+                  Continue in the modal for the full correspondence.
+                </p>
+              </div>
+              <div class="actions">
+                <a
+                  class="read-more"
+                  href="#"
+                  onclick="document.getElementById('king2').showModal(); return false;"
+                  aria-label="Read about King Tutankhamun"
+                  >Read More</a
+                >
+                <label
+                  data-back=""
+                  class="btn"
+                  for="flip2"
+                  aria-controls="flip2-card"
+                  aria-label="Flip back"
+                  >Back</label
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="tile">
+          <input
+            class="flip-toggle"
+            type="checkbox"
+            id="flip3"
+            aria-controls="flip3-card"
+          />
+          <div
+            class="flip"
+            id="flip3-card"
+            role="group"
+            aria-label="Queen Hatshepsut"
+          >
+            <!-- Front -->
+            <article class="face front">
+              <img
+                class="hero"
+                src="https://th.bing.com/th/id/R.2faa6cbafd86f7da28b195e6514aa9a8?rik=1Vl6%2bC%2buF%2bbzug&pid=ImgRaw&r=0"
+                alt="Queen Hatshepsut"
+              />
+              <div class="pad">
+                <h2 class="title">Queen Hatshepsut</h2>
+                <p class="meta">
+                  The first great queen in the history of ancient Egypt
+                </p>
+              </div>
+              <div class="pad" style="padding-top: 0">
+                <p class="excerpt" style="color: var(--muted)">
+                  Flip for the teaser and a clear Read More button.
+                </p>
+              </div>
+              <label
+                data-front=""
+                class="flip-btn"
+                for="flip3"
+                aria-controls="flip3-card"
+                aria-label="Flip card"
+                >Flip</label
+              >
+            </article>
+
+            <!-- Back (TEXT ONLY) -->
+            <article class="face back">
+              <div class="back-pad">
+                <h2 class="title">Queen Hatshepsut</h2>
+                <p class="meta">The Queen • ~ 7 min read</p>
+                <p class="excerpt">
+                  Hatshepsut was one of the most famous queens to rule Egypt and
+                  was considered a woman of great beauty. She is believed to
+                  have been the **first person to wear gloves**, due to a
+                  **congenital deformity in her fingers** (having six or more on
+                  each hand). This fact was only discovered after her **mummy**
+                  was examined, as in most of her **statues**, her hands
+                  appeared normal — she had instructed sculptors to depict them
+                  that way. She was also the **first to decorate gloves with
+                  precious stones**.
+                </p>
+                <p class="hint">Open the modal to read the complete tale.</p>
+              </div>
+              <div class="actions">
+                <a
+                  class="read-more"
+                  href="#"
+                  onclick="document.getElementById('king3').showModal(); return false;"
+                  aria-label="Read The Paper Lantern Shop"
+                  >Read More</a
+                >
+                <label
+                  data-back=""
+                  class="btn"
+                  for="flip3"
+                  aria-controls="flip3-card"
+                  aria-label="Flip back"
+                  >Back</label
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+
+      <!-- ============================== DIALOGS (full texts) ============================== -->
+
+      <!-- Dialog 1 -->
+      <dialog id="king1" aria-labelledby="king1-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close story"
+        >
+          ✕
+        </button>
+        <img
+          src="https://c8.alamy.com/comp/EY851B/luxor-egypt-temple-of-luxor-a-giant-statue-of-the-pharaoh-ramses-ii-EY851B.jpg"
+          alt="King Ramses II"
+        />
+        <h2 id="king1">King Ramses II</h2>
+        <p>
+          <em
+            >Ramses II (c. 1303 BC — July or August 1213 BC), also known as
+            Ramses the Great, was the third pharaoh of Egypt’s Nineteenth
+            Dynasty (reigned 1279 – 1213 BC). He is regarded as the most famous
+            and powerful pharaoh of the Egyptian Empire. His successors and
+            later rulers called him the “Great Ancestor.” Ramses II led several
+            military campaigns into the Levant, restoring Egyptian control over
+            Canaan, and also launched expeditions south into Nubia, where two of
+            his sons accompanied him, as recorded on the walls of the Beit
+            el-Wali temple.</em
+          >
+        </p>
+        <p>
+          Ramses was appointed crown prince at the age of fourteen by his
+          father, Seti I. It is believed he ascended the throne in his late
+          teens and ruled Egypt from 1291 BC to 1213 BC for a total of 78 years
+          and two months, according to both Manetho and contemporary Egyptian
+          records. Some sources claim he lived to 99 years, though most scholars
+          estimate he died at 90 or 91. If he became pharaoh in 1279 BC, as most
+          Egyptologists believe, he would have ascended the throne at age 31 in
+          1279 BC, based on the date of his coronation in the third harvest
+          season, day 27. Ramses II celebrated fourteen “Sed festivals” — a
+          jubilee first held after thirty years of reign and then every three
+          years — the most of any pharaoh. Upon his death, he was buried in a
+          tomb in the Valley of the Kings, but his mummy was later moved to the
+          royal cache, where it was discovered in 1881. Today, it is displayed
+          at the National Museum of Egyptian Civilization. The early years of
+          his reign focused on constructing cities, temples, and monuments. He
+          founded the city of Pi-Ramesses in the Nile Delta as his new capital
+          and main base for campaigns in Syria. The city was built on the ruins
+          of Avaris, the former Hyksos capital, and became the site of his
+          principal temple complex. He is also known by the Greek name
+          Ozymandias, a Hellenized rendering of part of his throne name meaning
+          “The powerful truth of Ra, the chosen of Ra.”
+        </p>
+      </dialog>
+
+      <!-- Dialog 2 -->
+      <dialog id="king2" aria-labelledby="king2-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close story"
+        >
+          ✕
+        </button>
+        <img
+          src="https://th.bing.com/th/id/ODL.6fb372eab3b58c5c22d50e5e54bbf7cc?w=310&h=198&c=7&rs=1&bgcl=ffff14&r=0&o=6&cb=ucfimg1&dpr=1.1&pid=AlgoBlockDebug&ucfimg=1"
+          alt="King Tutankhamun"
+        />
+        <h2 id="king2-title">King Tutankhamun</h2>
+        <p>
+          <em
+            >Tutankhamun was one of the pharaohs of ancient Egypt’s Eighteenth
+            Dynasty, ruling from 1334 BC to 1325 BC. He is among the most famous
+            pharaohs, not because of great achievements or military victories
+            like other rulers, but for historical reasons — most notably, the
+            discovery of his tomb and treasures completely intact.</em
+          >
+        </p>
+        <p>
+          The mystery surrounding his early death has long fascinated
+          historians. Many considered it unusual for a pharaoh to die so young,
+          especially given evidence of fractures in his thigh bone and skull.
+          His minister’s marriage to his widow and subsequent self-coronation
+          added further intrigue. These mysterious events, combined with the
+          widespread use of the “Curse of the Pharaohs” legend linked to his
+          tomb — often depicted in films and video games — made Tutankhamun one
+          of the most famous figures in ancient Egyptian history. Some even
+          regard his death as one of the earliest known assassinations in human
+          history. Tutankhamun died at a young age and was buried in his tomb,
+          KV62, in the Valley of the Kings. He became pharaoh at around nine
+          years old. His name in ancient Egyptian means “the living image of the
+          god Amun,” the chief deity of ancient Egypt. Tutankhamun lived during
+          a transitional period following Akhenaten, who had attempted to
+          replace Egypt’s traditional polytheism with the worship of a single
+          god. Under Tutankhamun, Egypt returned to the old religious practices.
+          His tomb was discovered in 1922 in the Valley of the Kings by British
+          archaeologist Howard Carter, an event that drew worldwide attention
+          and remains one of the greatest archaeological discoveries of all
+          time.
+        </p>
+      </dialog>
+
+      <!-- Dialog 3 -->
+      <dialog id="king3" aria-labelledby="king3-title">
+        <button
+          class="close-btn"
+          onclick="this.parentElement.close()"
+          aria-label="Close story"
+        >
+          ✕
+        </button>
+        <img
+          src="https://th.bing.com/th/id/R.2faa6cbafd86f7da28b195e6514aa9a8?rik=1Vl6%2bC%2buF%2bbzug&pid=ImgRaw&r=0"
+          alt="The Paper Lantern Shop full"
+        />
+        <h2 id="king3-title">Queen Hatshepsut</h2>
+        <p>
+          <em
+            >Hatshepsut, also known as Ghnemet Amun or Hatshepsut, the Beloved
+            of Amun and the Foremost of Noble Ladies (c. 1505–1458 BC), was one
+            of the most prominent and powerful queens to rule Egypt. She was the
+            sixth pharaoh of the Eighteenth Dynasty, ruling first as a regent
+            and later as a sole ruler from around 1479 BC to 1458 BC (according
+            to the low chronology). She was also the Great Royal Wife of Pharaoh
+            Thutmose II. Hatshepsut is considered the second confirmed woman to
+            rule Egypt with full pharaonic authority, after Sobekneferu of the
+            Twelfth Dynasty.</em
+          >
+        </p>
+        <p>
+          The daughter of Thutmose I and Queen Ahmose, Hatshepsut initially
+          ruled as regent for her young stepson Thutmose III, who inherited the
+          throne at the age of two following the death of his father and her
+          half-brother, Thutmose II. After several years of regency, she assumed
+          full pharaonic power, adopting the complete royal titulary and ruling
+          jointly with Thutmose III. To solidify her authority in a
+          male-dominated society, she adopted traditional male roles and
+          iconography, appearing in statues and reliefs with masculine features
+          and wearing the pharaoh’s regalia, symbolizing herself as both the
+          mother and father of Egypt. Her reign was marked by peace, prosperity,
+          and artistic flourishing. Hatshepsut was one of the most prolific
+          builders in ancient Egyptian history, commissioning grand construction
+          projects such as the Karnak Temple complex, the Red Chapel, and the
+          Speos Artemidos, with her most famous monument being her mortuary
+          temple at Deir el-Bahari. Hatshepsut is believed to have died in the
+          22nd year of Thutmose III’s reign. Toward the end of his rule and
+          during that of his son Amenhotep II, efforts were made to erase her
+          legacy from history — her statues were destroyed, inscriptions
+          defaced, and many of her achievements re-attributed to other pharaohs.
+        </p>
+      </dialog>
+    </body>
+  </body>
+</html>

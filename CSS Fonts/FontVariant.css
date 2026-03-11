@@ -1,0 +1,11 @@
+body{
+    margin: 20px;
+    font-family: Georgia, serif;
+    line-height: 1.5;
+}
+.normal{font-variant: normal;}
+.small-caps{font-variant: small-caps;}
+.ligatures{font-variant-ligatures: common-ligatures;}
+.numeric{font-variant-numeric: oldstyle-nums;}
+p{margin-bottom: 1em; color: #3CB371;}
+h1{color:#90EE90;}

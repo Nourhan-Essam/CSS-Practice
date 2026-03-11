@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haircare</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== Masonry Wall (ALL 22 images) ===== -->
+    <section class="masonry" aria-label="Masonry gallery">
+      <!-- Repeatable card pattern:
+           .card
+             figure.card-figure
+               img.thumb
+               small.ribbon (optional)
+             .pad (text)
+      -->
+
+      <!-- Image 1 -->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="data:image/webp;base64,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"
+            alt="Gallery image A1"
+          />
+          <small class="ribbon">A1</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 1</h3>
+          <p class="lede">Shampoo cleanses your scalp and removes dirt.</p>
+          <div class="meta"><span>Haircare</span><span>#01</span></div>
+        </div>
+      </article>
+
+      <!--Image 4-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.faeDAaABPUEwIOFuQDzwvQAAAA?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A1"
+          />
+          <small class="ribbon">A4</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 4</h3>
+          <p class="lede">Leave-in conditioner protects hair all day.</p>
+          <div class="meta"><span>Haircare</span><span>#04</span></div>
+        </div>
+      </article>
+
+      <!--Image 7-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.EqTF_XxF13LvJM4u7ZbpCAHaE8?w=296&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A1"
+          />
+          <small class="ribbon">A7</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 7</h3>
+          <p class="lede">
+            Heat protectant spray shields hair from styling tools.
+          </p>
+          <div class="meta"><span>Haircare</span><span>#07</span></div>
+        </div>
+      </article>
+
+      <!--Image 2-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.DHXsdm7RTOBJvg7S7CPIFwHaE8?w=231&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A6"
+          />
+          <small class="ribbon">A2</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 2</h3>
+          <p class="lede">
+            Hair oil adds shine and fights frizz.
+            <code>object-fit: cover</code>.
+          </p>
+          <div class="meta"><span>Haircare</span><span>#02</span></div>
+        </div>
+      </article>
+
+      <!--Image 5-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.lJBGW00sA6oRlXOPhUnIYAHaLH?w=124&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A16"
+          />
+          <small class="ribbon">A5</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 5</h3>
+          <p class="lede">Conditioner keeps hair soft and tangle-free.</p>
+          <div class="meta"><span>Haircare</span><span>#05</span></div>
+        </div>
+      </article>
+
+      <!--Image 8-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.EgJ3BMjNyEUav8j2z-w53AHaEQ?w=297&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A16"
+          />
+          <small class="ribbon">A8</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 8</h3>
+          <p class="lede">Conditioner keeps hair soft and tangle-free.</p>
+          <div class="meta"><span>Hircare</span><span>#08</span></div>
+        </div>
+      </article>
+
+      <!--image 3-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.V7ldOclVHfAcr4MvpL91SgHaNK?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A16"
+          />
+          <small class="ribbon">A3</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 3</h3>
+          <p class="lede">Hair masks deeply repair damaged strands.</p>
+          <div class="meta"><span>Haircare</span><span>#03</span></div>
+        </div>
+      </article>
+
+      <!--Image 6-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.p7OIfH8vcmAu_whNwKML5gHaLG?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A16"
+          />
+          <small class="ribbon">A6</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 6</h3>
+          <p class="lede">Hair dyes damage the hair.</p>
+          <div class="meta"><span>Haircare</span><span>#06</span></div>
+        </div>
+      </article>
+
+      <!--Image 9-->
+      <article class="card">
+        <figure class="card-figure">
+          <img
+            class="thumb"
+            src="https://th.bing.com/th/id/OIP.Vt9sQhTdUPkybvBvcHzj9AHaHa?w=156&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="Gallery image A16"
+          />
+          <small class="ribbon">A9</small>
+        </figure>
+        <div class="pad">
+          <h3 class="title">Product 9</h3>
+          <p class="lede">Dry shampoo refreshes hair between washes.</p>
+          <div class="meta"><span>Haircare</span><span>#09</span></div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

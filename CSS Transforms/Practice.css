@@ -1,0 +1,56 @@
+.logo-rotate{
+    text-align: center;
+}
+.logo-rotate img{
+    width: 150px;
+    transition: transform 0.6s ease;
+}
+.logo-rotate img:hover{
+    transform: rotate(360deg);
+}
+
+.gallery-3D{
+    display: flex;
+    gap: 1rem;
+    perspective: 800px;
+}
+.gallery-3D img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+}
+.gallery-3D img:hover{
+    transform: translateZ(40px);
+}
+
+.iso-grid{
+    width: max-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    transform: skewY(-15deg) scaleY(0.866); /* isometric projection */
+}
+.iso-grid .tile{
+     width: 60px;
+      height: 60px;
+      background: #8e44ad;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.9rem;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.iso-grid h2{
+    grid-column: span 4;
+    text-align: center;
+    transform: skewY(15deg) scaleY(1.1555); /* reverse the container’s transform */
+    margin-bottom: 0.5rem;
+    color: #444;
+}

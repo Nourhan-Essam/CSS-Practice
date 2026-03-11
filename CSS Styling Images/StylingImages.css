@@ -1,0 +1,78 @@
+.demo img, .demo .avatar{ display: block;}
+.label{
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.card-image{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.gallery-item{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 1rem;
+}
+.gallery-item img{
+    width: 200px;
+    height: 150px;
+    background: #eee;
+}
+.cover{object-fit: cover;}
+.contain{object-fit: contain;}
+
+.photo{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.photo:hover{
+    filter: grayscale(80%) brightness(1.2);
+    transform: scale(1.05);
+}
+
+.filter-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.filter-item{text-align: center;}
+.filter-item img{
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.grayscale  img{filter: grayscale(100%);}
+.sepia      img{filter: sepia(100%);}
+.blur       img{filter: blur(3px);}
+.brightness img{filter: brightness(150%);}
+.contrast   img{filter: contrast(200%);}
+.hue        img{filter: hue-rotate(90deg);}
+.invert     img{filter: invert(100%);}
+.saturate   img{filter: saturate(200%);}
+.shadow     img{filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));}
+.none       img{filter: none;}

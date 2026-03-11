@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow and Truncation Examples</title>
+    <link rel="stylesheet" href="overflow&trunction.css">
+</head>
+<body>
+    <h1>Text Overflow and Truncation Techniques</h1>
+    <h2>No Truncation (default, text wraps & all is visible)</h2>
+    <div class="container no-trunction">
+        This is a very long sentence intended to demonstrate how no truncation occurs and the text simply wraps naturally onto multiple lines as needed in the container.
+    </div>
+
+    <h2>Single-Line Ellipsis</h2>
+    <div class="container single-line-ellipsis">
+        This is a very long single line of text that will not fit the container, so it ends with an ellipsis.
+    </div>
+
+    <h2>Multi-Line Clamp (max 3 lines, then ellipsis)</h2>
+    <div class="container multi-line-clamp">
+         This is multi-line text that will be clamped to just three lines. If there is more content than fits, you'll see an ellipsis at the end of the third line, indicating there is more hidden content.
+         Here is some additional text to make sure this shows up!
+    </div>
+
+    <h2>Clipped vs Escaped Tooltip</h2>
+    <div class="container clipped" style="margin-bottom:6px;">
+        This is clipped text with <b>no ellipsis</b> or scroll, just hidden overflow.
+    </div>
+
+    <div class="container tooltip" title="This is escaped with a tooltip: the full content is visible on hover.">
+    This is escaped with ellipsis, but the full content is shown in a tooltip on hover.
+  </div>
+   <small>Hover over the tooltip box to see the entire text in a browser tooltip.</small>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Light mode variables */
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
+/* Dark mode variables */
+body.dark{
+    --bg-color: #121212;
+    --text-color: white;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: monospace;
+    text-align: center;
+    padding-top: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}

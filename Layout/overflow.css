@@ -1,0 +1,20 @@
+.container{
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-family: sans-serif;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+.visible{overflow: visible; background: #eaf6fb;}
+.hidden{overflow: hidden; background: #fde9e9;}
+.scroll{overflow: scroll; background: #e9fbe9;}
+.auto{overflow: auto; background: #faf6e9;}
+.clip{overflow: clip; background: #ece9fa;}
+h2{
+    font-size: 1.1em;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}

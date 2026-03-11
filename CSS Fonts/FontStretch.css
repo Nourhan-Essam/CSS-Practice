@@ -1,0 +1,13 @@
+body
+{
+    margin: 20px;
+    font-family: "Arial", sans-serif;
+    line-height: 1.4;
+}
+.normal{font-stretch: normal; color: #8B4513;}
+.condensed{font-stretch: condensed; color:#8B4513;}
+.expanded{font-stretch: expanded; color:#8B4513;}
+.ultra-condensed{font-stretch: ultra-condensed; color:#8B4513;}
+.ultra-expanded{font-stretch: ultra-expanded; color:#8B4513;}
+p{margin-bottom: 1em;}
+h1{color:#CD853F;}

@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+h2{
+    font-size: 1.1em;
+    margin-top: 36px;
+    margin-bottom: 6px;
+}
+.demo-row{margin-bottom: 18px;}
+.container{
+    width: 260px;
+    margin: 8px 0 14px 0px;
+    padding: 10px;
+    border: 2px solid #333;
+    background: #f8f8f8;
+    font-size: 16px;
+}
+/* No Truncation (shows all text, may wrap) */
+.no-trunction{
+    white-space: normal;
+    overflow: visible;
+    background: #eaf6fb;
+}
+/* Single-Line Ellipsis */
+.single-line-ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #fde9e9;
+}
+/* Multi-Line Clamp: Show up to 3 lines, then ellipsis */
+.multi-line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #e9fbe9;
+    height: 3.9em; /* 3 lines x line-height (1.3em) */
+    line-height: 1.3em;
+}
+/* Clipped (hidden overflow, no scroll, no ellipsis) */
+.clipped{
+    overflow: hidden;
+    white-space: nowrap;
+    background: #ece9fa;
+}
+ /* Tooltip Example */
+ .tooltip{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #faf6e9;
+    cursor: pointer;
+ }

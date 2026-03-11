@@ -1,0 +1,22 @@
+body{
+    font-family: cursive;
+    text-align: center;
+    padding: 2rem;
+    background: #f4f6f9;
+}
+h1{margin-bottom: 1.2rem;}
+.toolbar{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    fill: #555;
+    cursor: pointer;
+    transition: fill .2s;
+}
+.icon:hover{
+    fill: #e74c3c;
+}
